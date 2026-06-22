@@ -48,6 +48,7 @@ jobs:
 
           def get_val(pattern, text):
               match = re.search(pattern, text)
+              # คืนค่าที่ดึงได้และลบช่องว่างส่วนเกินออก
               return match.group(1).strip() if match else None
 
           for region in root.findall('.//RegionForecast'):
@@ -60,11 +61,11 @@ jobs:
                   "geometry": {"type": "Point", "coordinates": [lon, lat]},
                   "properties": {
                       "region_thai": name,
-                      "rain_chance": get_val(r"ร้อยละ\s*(\d+)", desc),
+                      "rain_chance": get_val(r"ร้อยละ\s*([\d\s-]+)", desc),
                       "wind_speed": get_val(r"ความเร็ว\s*([\d\s-]+)\s*กม", desc),
-                      "temp_min": get_val(r"ต่ำสุด\s*(\d+)", desc),
-                      "temp_max": get_val(r"สูงสุด\s*(\d+)", desc),
-                      "wave_height": get_val(r"คลื่นสูง\s*([0-9-.]+\s*เมตร)", desc),
+                      "temp_min": get_val(r"ต่ำสุด\s*([\d\s-]+)", desc),
+                      "temp_max": get_val(r"สูงสุด\s*([\d\s-]+)", desc),
+                      "wave_height": get_val(r"คลื่นสูง\s*([0-9-.\s]+เมตร)", desc),
                       "description_thai": desc,
                       "region_eng": region.find('RegionNameEnglish').text.strip()
                   }
@@ -80,6 +81,6 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           if [[ -n $(git status -s) ]]; then
             git add weather.geojson
-            git commit -m "Auto-update weather geojson with split fields: $(date +'%Y-%m-%d %H:%M:%S')"
+            git commit -m "Auto-update weather geojson with refined fields: $(date +'%Y-%m-%d %H:%M:%S')"
             git push
           fi
