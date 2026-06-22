@@ -8,12 +8,20 @@ on:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
       - name: Fetch and Save Weather GeoJSON
         shell: python
         run: |
@@ -21,7 +29,7 @@ jobs:
           import xml.etree.ElementTree as ET
           import json
 
-          # พิกัดจุดศูนย์กลางของแต่ละภาค (ละติจูด, ลองจิจูด)
+          # พิกัดจุดศูนย์กลางของแต่ละภาค
           coords = {
               "ภาคเหนือ": [18.5, 99.0],
               "ภาคตะวันออกเฉียงเหนือ": [16.0, 103.0],
@@ -33,32 +41,46 @@ jobs:
           }
 
           url = "https://data.tmd.go.th/api/WeatherForecast7DaysByRegion/v2/?uid=demo&ukey=demokey"
-          response = requests.get(url, timeout=30)
-          root = ET.fromstring(response.content)
+          
+          try:
+              response = requests.get(url, timeout=30)
+              response.raise_for_status()
+              root = ET.fromstring(response.content)
 
-          geojson = {"type": "FeatureCollection", "features": []}
+              geojson = {"type": "FeatureCollection", "features": []}
 
-          for region in root.findall('.//RegionForecast'):
-              name = region.find('RegionNameThai').text.strip()
-              lat, lon = coords.get(name, [13.0, 101.0]) # Default ถ้าหาไม่เจอ
-              
-              feature = {
-                  "type": "Feature",
-                  "geometry": {"type": "Point", "coordinates": [lon, lat]},
-                  "properties": {
-                      "region_thai": name,
-                      "description_thai": region.find('DescriptionThai').text.strip(),
-                      "region_eng": region.find('RegionNameEnglish').text.strip()
+              for region in root.findall('.//RegionForecast'):
+                  name = region.find('RegionNameThai').text.strip()
+                  # ดึงพิกัดตามชื่อภาค ถ้าไม่พบให้ใช้พิกัด default
+                  lat, lon = coords.get(name, [13.0, 101.0])
+                  
+                  feature = {
+                      "type": "Feature",
+                      "geometry": {"type": "Point", "coordinates": [lon, lat]},
+                      "properties": {
+                          "region_thai": name,
+                          "description_thai": region.find('DescriptionThai').text.strip(),
+                          "region_eng": region.find('RegionNameEnglish').text.strip()
+                      }
                   }
-              }
-              geojson["features"].append(feature)
+                  geojson["features"].append(feature)
 
-          with open("weather.geojson", "w", encoding="utf-8") as f:
-              json.dump(geojson, f, ensure_ascii=False, indent=4)
-      - name: Commit and Push
+              with open("weather.geojson", "w", encoding="utf-8") as f:
+                  json.dump(geojson, f, ensure_ascii=False, indent=4)
+              
+              print("Successfully updated weather.geojson")
+          except Exception as e:
+              print(f"Error: {e}")
+              exit(1)
+
+      - name: Commit and Push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add weather.geojson
-          git commit -m "Update weather geojson with coordinates" || exit 0
-          git push
+          if [[ -n $(git status -s) ]]; then
+            git add weather.geojson
+            git commit -m "Auto-update weather geojson: $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          else
+            echo "No changes to commit"
+          fi
