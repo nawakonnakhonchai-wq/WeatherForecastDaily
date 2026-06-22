@@ -1,0 +1,72 @@
+name: Update Weather Data
+
+on:
+  schedule:
+    # รันทุกๆ 3 ชั่วโมง (นาทีที่ 0 ของทุก 3 ชม.)
+    - cron: '0 */3 * * *'
+  # ให้กดรันด้วยมือได้ผ่านหน้า Actions ใน GitHub
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Fetch and Save Weather Data
+        shell: python
+        run: |
+          import requests
+          import xml.etree.ElementTree as ET
+          import json
+          import os
+
+          # URL ข้อมูลจากกรมอุตุฯ
+          url = "https://data.tmd.go.th/api/WeatherForecast7DaysByRegion/v2/?uid=demo&ukey=demokey"
+          
+          try:
+              response = requests.get(url, timeout=30)
+              response.raise_for_status()
+              root = ET.fromstring(response.content)
+
+              weather_list = []
+              for region in root.findall('.//RegionForecast'):
+                  data = {
+                      "region_thai": region.find('RegionNameThai').text.strip(),
+                      "description_thai": region.find('DescriptionThai').text.strip(),
+                      "region_eng": region.find('RegionNameEnglish').text.strip()
+                  }
+                  weather_list.append(data)
+
+              # เขียนไฟล์ JSON
+              with open("weather.json", "w", encoding="utf-8") as f:
+                  json.dump(weather_list, f, ensure_ascii=False, indent=4)
+              
+              print("Successfully updated weather.json")
+          except Exception as e:
+              print(f"Error: {e}")
+              exit(1)
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          # ตรวจสอบว่ามีการเปลี่ยนแปลงไฟล์หรือไม่ ถ้าไม่มีจะไม่ Commit
+          if [[ -n $(git status -s) ]]; then
+            git add weather.json
+            git commit -m "Auto-update weather data: $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          else
+            echo "No changes to commit"
+          fi
