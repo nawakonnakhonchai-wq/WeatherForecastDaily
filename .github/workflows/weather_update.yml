@@ -19,8 +19,7 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: |
-          pip install requests
+        run: pip install requests
 
       - name: Fetch and Save Weather GeoJSON
         shell: python
@@ -28,8 +27,8 @@ jobs:
           import requests
           import xml.etree.ElementTree as ET
           import json
+          import re
 
-          # พิกัดจุดศูนย์กลางของแต่ละภาค
           coords = {
               "ภาคเหนือ": [18.5, 99.0],
               "ภาคตะวันออกเฉียงเหนือ": [16.0, 103.0],
@@ -41,46 +40,46 @@ jobs:
           }
 
           url = "https://data.tmd.go.th/api/WeatherForecast7DaysByRegion/v2/?uid=demo&ukey=demokey"
-          
-          try:
-              response = requests.get(url, timeout=30)
-              response.raise_for_status()
-              root = ET.fromstring(response.content)
+          response = requests.get(url, timeout=30)
+          response.raise_for_status()
+          root = ET.fromstring(response.content)
 
-              geojson = {"type": "FeatureCollection", "features": []}
+          geojson = {"type": "FeatureCollection", "features": []}
 
-              for region in root.findall('.//RegionForecast'):
-                  name = region.find('RegionNameThai').text.strip()
-                  # ดึงพิกัดตามชื่อภาค ถ้าไม่พบให้ใช้พิกัด default
-                  lat, lon = coords.get(name, [13.0, 101.0])
-                  
-                  feature = {
-                      "type": "Feature",
-                      "geometry": {"type": "Point", "coordinates": [lon, lat]},
-                      "properties": {
-                          "region_thai": name,
-                          "description_thai": region.find('DescriptionThai').text.strip(),
-                          "region_eng": region.find('RegionNameEnglish').text.strip()
-                      }
-                  }
-                  geojson["features"].append(feature)
+          def get_val(pattern, text):
+              match = re.search(pattern, text)
+              return match.group(1).strip() if match else None
 
-              with open("weather.geojson", "w", encoding="utf-8") as f:
-                  json.dump(geojson, f, ensure_ascii=False, indent=4)
+          for region in root.findall('.//RegionForecast'):
+              name = region.find('RegionNameThai').text.strip()
+              desc = region.find('DescriptionThai').text.strip()
+              lat, lon = coords.get(name, [13.0, 101.0])
               
-              print("Successfully updated weather.geojson")
-          except Exception as e:
-              print(f"Error: {e}")
-              exit(1)
+              feature = {
+                  "type": "Feature",
+                  "geometry": {"type": "Point", "coordinates": [lon, lat]},
+                  "properties": {
+                      "region_thai": name,
+                      "rain_chance": get_val(r"ร้อยละ\s*(\d+)", desc),
+                      "wind_speed": get_val(r"ความเร็ว\s*([\d\s-]+)\s*กม", desc),
+                      "temp_min": get_val(r"ต่ำสุด\s*(\d+)", desc),
+                      "temp_max": get_val(r"สูงสุด\s*(\d+)", desc),
+                      "wave_height": get_val(r"คลื่นสูง\s*([0-9-.]+\s*เมตร)", desc),
+                      "description_thai": desc,
+                      "region_eng": region.find('RegionNameEnglish').text.strip()
+                  }
+              }
+              geojson["features"].append(feature)
 
-      - name: Commit and Push changes
+          with open("weather.geojson", "w", encoding="utf-8") as f:
+              json.dump(geojson, f, ensure_ascii=False, indent=4)
+      
+      - name: Commit and Push
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           if [[ -n $(git status -s) ]]; then
             git add weather.geojson
-            git commit -m "Auto-update weather geojson: $(date +'%Y-%m-%d %H:%M:%S')"
+            git commit -m "Auto-update weather geojson with split fields: $(date +'%Y-%m-%d %H:%M:%S')"
             git push
-          else
-            echo "No changes to commit"
           fi
