@@ -2,20 +2,25 @@ name: Update Weather GeoJSON
 
 on:
   schedule:
-    - cron: '0 */3 * * *' # รันทุกๆ 3 ชั่วโมง
-  workflow_dispatch: # เปิดให้กดรันแบบ manual ได้จากหน้า Actions
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+    inputs:
+      event_type:
+        description: 'Event type to run'
+        required: true
+        default: 'update-weather'
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # จำเป็นต้องมีเพื่อให้ Actions เขียนไฟล์กลับเข้า Repo ได้
+      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: true # ให้ใช้ token ของ GitHub Actions ในการ push
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -32,6 +37,11 @@ jobs:
           import xml.etree.ElementTree as ET
           import json
           import re
+          import os
+
+          # รับค่าจาก API dispatch (ถ้ามี)
+          event_type = os.getenv('INPUT_EVENT_TYPE', 'default-run')
+          print(f"Running workflow with event_type: {event_type}")
 
           coords = {
               "ภาคเหนือ": [18.5, 99.0],
@@ -81,13 +91,12 @@ jobs:
               
           except Exception as e:
               print(f"Error occurred: {e}")
-              exit(1) # ให้ workflow แจ้งสถานะ fail ถ้าดึงข้อมูลไม่ได้
+              exit(1)
 
       - name: Commit and Push
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          # ตรวจสอบว่ามีการเปลี่ยนแปลงจริงก่อน commit
           if [[ -n $(git status -s) ]]; then
             git add weather.geojson
             git commit -m "Auto-update weather geojson: $(date +'%Y-%m-%d %H:%M:%S')"
