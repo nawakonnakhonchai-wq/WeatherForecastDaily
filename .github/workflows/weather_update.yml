@@ -2,16 +2,20 @@ name: Update Weather GeoJSON
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
-  workflow_dispatch:
+    - cron: '0 */3 * * *' # รันทุกๆ 3 ชั่วโมง
+  workflow_dispatch: # เปิดให้กดรันแบบ manual ได้จากหน้า Actions
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write # จำเป็นต้องมีเพื่อให้ Actions เขียนไฟล์กลับเข้า Repo ได้
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true # ให้ใช้ token ของ GitHub Actions ในการ push
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -40,47 +44,54 @@ jobs:
           }
 
           url = "https://data.tmd.go.th/api/WeatherForecast7DaysByRegion/v2/?uid=demo&ukey=demokey"
-          response = requests.get(url, timeout=30)
-          response.raise_for_status()
-          root = ET.fromstring(response.content)
+          try:
+              response = requests.get(url, timeout=30)
+              response.raise_for_status()
+              root = ET.fromstring(response.content)
 
-          geojson = {"type": "FeatureCollection", "features": []}
+              geojson = {"type": "FeatureCollection", "features": []}
 
-          def get_val(pattern, text):
-              match = re.search(pattern, text)
-              # คืนค่าที่ดึงได้และลบช่องว่างส่วนเกินออก
-              return match.group(1).strip() if match else None
+              def get_val(pattern, text):
+                  match = re.search(pattern, text)
+                  return match.group(1).strip() if match else None
 
-          for region in root.findall('.//RegionForecast'):
-              name = region.find('RegionNameThai').text.strip()
-              desc = region.find('DescriptionThai').text.strip()
-              lat, lon = coords.get(name, [13.0, 101.0])
-              
-              feature = {
-                  "type": "Feature",
-                  "geometry": {"type": "Point", "coordinates": [lon, lat]},
-                  "properties": {
-                      "region_thai": name,
-                      "rain_chance": get_val(r"ร้อยละ\s*([\d\s-]+)", desc),
-                      "wind_speed": get_val(r"ความเร็ว\s*([\d\s-]+)\s*กม", desc),
-                      "temp_min": get_val(r"ต่ำสุด\s*([\d\s-]+)", desc),
-                      "temp_max": get_val(r"สูงสุด\s*([\d\s-]+)", desc),
-                      "wave_height": get_val(r"คลื่นสูง\s*([0-9-.\s]+เมตร)", desc),
-                      "description_thai": desc,
-                      "region_eng": region.find('RegionNameEnglish').text.strip()
+              for region in root.findall('.//RegionForecast'):
+                  name = region.find('RegionNameThai').text.strip()
+                  desc = region.find('DescriptionThai').text.strip()
+                  lat, lon = coords.get(name, [13.0, 101.0])
+                  
+                  feature = {
+                      "type": "Feature",
+                      "geometry": {"type": "Point", "coordinates": [lon, lat]},
+                      "properties": {
+                          "region_thai": name,
+                          "rain_chance": get_val(r"ร้อยละ\s*([\d\s-]+)", desc),
+                          "wind_speed": get_val(r"ความเร็ว\s*([\d\s-]+)\s*กม", desc),
+                          "temp_min": get_val(r"ต่ำสุด\s*([\d\s-]+)", desc),
+                          "temp_max": get_val(r"สูงสุด\s*([\d\s-]+)", desc),
+                          "wave_height": get_val(r"คลื่นสูง\s*([0-9-.\s]+เมตร)", desc),
+                          "description_thai": desc,
+                          "region_eng": region.find('RegionNameEnglish').text.strip()
+                      }
                   }
-              }
-              geojson["features"].append(feature)
+                  geojson["features"].append(feature)
 
-          with open("weather.geojson", "w", encoding="utf-8") as f:
-              json.dump(geojson, f, ensure_ascii=False, indent=4)
-      
+              with open("weather.geojson", "w", encoding="utf-8") as f:
+                  json.dump(geojson, f, ensure_ascii=False, indent=4)
+              
+          except Exception as e:
+              print(f"Error occurred: {e}")
+              exit(1) # ให้ workflow แจ้งสถานะ fail ถ้าดึงข้อมูลไม่ได้
+
       - name: Commit and Push
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          # ตรวจสอบว่ามีการเปลี่ยนแปลงจริงก่อน commit
           if [[ -n $(git status -s) ]]; then
             git add weather.geojson
-            git commit -m "Auto-update weather geojson with refined fields: $(date +'%Y-%m-%d %H:%M:%S')"
+            git commit -m "Auto-update weather geojson: $(date +'%Y-%m-%d %H:%M:%S')"
             git push
+          else
+            echo "No changes to commit."
           fi
