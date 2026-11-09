@@ -494,15 +494,22 @@ function renderTable() {
 }
 
 /* ---------- แผนที่ ---------- */
-const map = L.map("map", { zoomControl: true, scrollWheelZoom: false }).setView([13.2, 100.9], 6);
-let tiles = null;
+const map = L.map("map", { zoomControl: true, scrollWheelZoom: false, zoomSnap: 0.5 }).setView([13.2, 100.9], 6);
+// แผนที่ฐานโทนเทาของ Esri (ไม่ต้องใช้ API key) — ชั้นพื้น + ชั้นชื่อสถานที่ สลับตามธีม
+let tiles = [];
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/";
 function setTiles() {
-  const dark = document.documentElement.dataset.theme !== "light";
-  if (tiles) tiles.remove();
-  tiles = L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? "dark_all" : "light_all"}/{z}/{x}/{y}{r}.png`, {
-    maxZoom: 12, subdomains: "abcd",
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a> | Weather: <a href="https://open-meteo.com/">Open-Meteo</a>'
-  }).addTo(map);
+  const tone = document.documentElement.dataset.theme === "light" ? "Light" : "Dark";
+  tiles.forEach(t => t.remove());
+  const opt = { maxZoom: 12, maxNativeZoom: 16 };
+  tiles = [
+    L.tileLayer(`${ESRI}World_${tone}_Gray_Base/MapServer/tile/{z}/{y}/{x}`, {
+      ...opt, attribution: 'Tiles &copy; <a href="https://www.esri.com/">Esri</a> &mdash; Esri, HERE, Garmin, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | Weather: <a href="https://open-meteo.com/">Open-Meteo</a>'
+    }),
+    L.tileLayer(`${ESRI}World_${tone}_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, { ...opt, pane: "overlayPane" }),
+  ];
+  tiles.forEach(t => t.addTo(map));
+  tiles[1].bringToBack();
 }
 setTiles();
 const legend = L.control({ position: "bottomleft" });
