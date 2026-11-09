@@ -1,0 +1,2176 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "updated_at": "2026-11-09T14:03:31+07:00",
+  "timezone": "Asia/Bangkok",
+  "source": "Open-Meteo.com",
+  "attribution": "Weather data by Open-Meteo.com (CC BY 4.0)",
+  "attribution_url": "https://open-meteo.com/",
+  "units": {
+   "temp": "°C",
+   "humidity": "%",
+   "rain_mm": "mm",
+   "wind_kmh": "km/h",
+   "rain_prob": "%"
+  },
+  "count": 77
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.5018,
+     13.7563
+    ]
+   },
+   "properties": {
+    "id": "BKK",
+    "name_th": "กรุงเทพมหานคร",
+    "name_en": "Bangkok",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 33.6,
+    "humidity": 49,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.2,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 33.6,
+    "today_min": 25.1,
+    "today_rain_prob": 41,
+    "today_rain_mm": 1.2,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.5144,
+     13.8621
+    ]
+   },
+   "properties": {
+    "id": "NBI",
+    "name_th": "นนทบุรี",
+    "name_en": "Nonthaburi",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.8,
+    "humidity": 60,
+    "rain_mm": 0.0,
+    "wind_kmh": 9.6,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 32.0,
+    "today_min": 24.6,
+    "today_rain_prob": 41,
+    "today_rain_mm": 2.5,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.525,
+     14.0208
+    ]
+   },
+   "properties": {
+    "id": "PTE",
+    "name_th": "ปทุมธานี",
+    "name_en": "Pathum Thani",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.7,
+    "humidity": 64,
+    "rain_mm": 0.0,
+    "wind_kmh": 7.2,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.7,
+    "today_min": 24.6,
+    "today_rain_prob": 53,
+    "today_rain_mm": 1.0,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.5998,
+     13.5991
+    ]
+   },
+   "properties": {
+    "id": "SPK",
+    "name_th": "สมุทรปราการ",
+    "name_en": "Samut Prakan",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.9,
+    "humidity": 60,
+    "rain_mm": 0.0,
+    "wind_kmh": 12.1,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 32.0,
+    "today_min": 25.1,
+    "today_rain_prob": 41,
+    "today_rain_mm": 0.6,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.2744,
+     13.5475
+    ]
+   },
+   "properties": {
+    "id": "SKN",
+    "name_th": "สมุทรสาคร",
+    "name_en": "Samut Sakhon",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 63,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.5,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 31.6,
+    "today_min": 24.7,
+    "today_rain_prob": 65,
+    "today_rain_mm": 0.7,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.0023,
+     13.4098
+    ]
+   },
+   "properties": {
+    "id": "SKM",
+    "name_th": "สมุทรสงคราม",
+    "name_en": "Samut Songkhram",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.4,
+    "humidity": 64,
+    "rain_mm": 0.0,
+    "wind_kmh": 11.9,
+    "weather_code": 0,
+    "weather_th": "ท้องฟ้าแจ่มใส",
+    "today_max": 31.5,
+    "today_min": 23.9,
+    "today_rain_prob": 80,
+    "today_rain_mm": 0.6,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.0621,
+     13.8199
+    ]
+   },
+   "properties": {
+    "id": "NPT",
+    "name_th": "นครปฐม",
+    "name_en": "Nakhon Pathom",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 30.8,
+    "humidity": 66,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.3,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.0,
+    "today_min": 24.4,
+    "today_rain_prob": 65,
+    "today_rain_mm": 1.5,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.5689,
+     14.3532
+    ]
+   },
+   "properties": {
+    "id": "AYA",
+    "name_th": "พระนครศรีอยุธยา",
+    "name_en": "Phra Nakhon Si Ayutthaya",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.8,
+    "humidity": 60,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.9,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 31.9,
+    "today_min": 25.0,
+    "today_rain_prob": 45,
+    "today_rain_mm": 0.2,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.455,
+     14.5896
+    ]
+   },
+   "properties": {
+    "id": "ATG",
+    "name_th": "อ่างทอง",
+    "name_en": "Ang Thong",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 60,
+    "rain_mm": 0.0,
+    "wind_kmh": 13.1,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.8,
+    "today_min": 24.6,
+    "today_rain_prob": 31,
+    "today_rain_mm": 0.0,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.6534,
+     14.7995
+    ]
+   },
+   "properties": {
+    "id": "LRI",
+    "name_th": "ลพบุรี",
+    "name_en": "Lop Buri",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.8,
+    "humidity": 57,
+    "rain_mm": 0.0,
+    "wind_kmh": 15.5,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 31.9,
+    "today_min": 24.8,
+    "today_rain_prob": 16,
+    "today_rain_mm": 0.0,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.3967,
+     14.8936
+    ]
+   },
+   "properties": {
+    "id": "SBR",
+    "name_th": "สิงห์บุรี",
+    "name_en": "Sing Buri",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.3,
+    "humidity": 61,
+    "rain_mm": 0.0,
+    "wind_kmh": 14.3,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.5,
+    "today_min": 24.0,
+    "today_rain_prob": 43,
+    "today_rain_mm": 0.2,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.1251,
+     15.1851
+    ]
+   },
+   "properties": {
+    "id": "CNT",
+    "name_th": "ชัยนาท",
+    "name_en": "Chai Nat",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 30.7,
+    "humidity": 64,
+    "rain_mm": 0.0,
+    "wind_kmh": 13.5,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 30.8,
+    "today_min": 22.9,
+    "today_rain_prob": 78,
+    "today_rain_mm": 2.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.9101,
+     14.5289
+    ]
+   },
+   "properties": {
+    "id": "SRI",
+    "name_th": "สระบุรี",
+    "name_en": "Saraburi",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 32.8,
+    "humidity": 51,
+    "rain_mm": 0.0,
+    "wind_kmh": 14.8,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 32.8,
+    "today_min": 24.9,
+    "today_rain_prob": 18,
+    "today_rain_mm": 0.0,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     101.213,
+     14.2069
+    ]
+   },
+   "properties": {
+    "id": "NYK",
+    "name_th": "นครนายก",
+    "name_en": "Nakhon Nayok",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 32.1,
+    "humidity": 59,
+    "rain_mm": 0.0,
+    "wind_kmh": 1.7,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 32.3,
+    "today_min": 23.4,
+    "today_rain_prob": 46,
+    "today_rain_mm": 0.8,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.1177,
+     14.4745
+    ]
+   },
+   "properties": {
+    "id": "SPB",
+    "name_th": "สุพรรณบุรี",
+    "name_en": "Suphan Buri",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.7,
+    "humidity": 60,
+    "rain_mm": 0.0,
+    "wind_kmh": 13.4,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.7,
+    "today_min": 24.4,
+    "today_rain_prob": 47,
+    "today_rain_mm": 0.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.5328,
+     14.0228
+    ]
+   },
+   "properties": {
+    "id": "KRI",
+    "name_th": "กาญจนบุรี",
+    "name_en": "Kanchanaburi",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 28.2,
+    "humidity": 77,
+    "rain_mm": 0.1,
+    "wind_kmh": 14.8,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 29.9,
+    "today_min": 24.2,
+    "today_rain_prob": 82,
+    "today_rain_mm": 1.8,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.8134,
+     13.5283
+    ]
+   },
+   "properties": {
+    "id": "RBR",
+    "name_th": "ราชบุรี",
+    "name_en": "Ratchaburi",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 30.8,
+    "humidity": 66,
+    "rain_mm": 0.0,
+    "wind_kmh": 8.6,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 30.9,
+    "today_min": 23.2,
+    "today_rain_prob": 88,
+    "today_rain_mm": 5.0,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.9398,
+     13.1119
+    ]
+   },
+   "properties": {
+    "id": "PBI",
+    "name_th": "เพชรบุรี",
+    "name_en": "Phetchaburi",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 30.5,
+    "humidity": 68,
+    "rain_mm": 0.0,
+    "wind_kmh": 13.6,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 30.7,
+    "today_min": 23.3,
+    "today_rain_prob": 90,
+    "today_rain_mm": 2.5,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.7973,
+     11.8124
+    ]
+   },
+   "properties": {
+    "id": "PKN",
+    "name_th": "ประจวบคีรีขันธ์",
+    "name_en": "Prachuap Khiri Khan",
+    "region": "central",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 30.0,
+    "humidity": 69,
+    "rain_mm": 0.0,
+    "wind_kmh": 21.8,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 30.0,
+    "today_min": 24.7,
+    "today_rain_prob": 92,
+    "today_rain_mm": 4.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.9847,
+     13.3611
+    ]
+   },
+   "properties": {
+    "id": "CBI",
+    "name_th": "ชลบุรี",
+    "name_en": "Chon Buri",
+    "region": "east",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.3,
+    "humidity": 59,
+    "rain_mm": 0.0,
+    "wind_kmh": 15.7,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 31.4,
+    "today_min": 23.6,
+    "today_rain_prob": 33,
+    "today_rain_mm": 0.3,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     101.2816,
+     12.6814
+    ]
+   },
+   "properties": {
+    "id": "RYG",
+    "name_th": "ระยอง",
+    "name_en": "Rayong",
+    "region": "east",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 59,
+    "rain_mm": 0.0,
+    "wind_kmh": 14.1,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.6,
+    "today_min": 24.9,
+    "today_rain_prob": 8,
+    "today_rain_mm": 0.3,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     102.1039,
+     12.6114
+    ]
+   },
+   "properties": {
+    "id": "CTI",
+    "name_th": "จันทบุรี",
+    "name_en": "Chanthaburi",
+    "region": "east",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.4,
+    "humidity": 57,
+    "rain_mm": 0.0,
+    "wind_kmh": 16.5,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 31.5,
+    "today_min": 24.0,
+    "today_rain_prob": 8,
+    "today_rain_mm": 0.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     102.5175,
+     12.2428
+    ]
+   },
+   "properties": {
+    "id": "TRT",
+    "name_th": "ตราด",
+    "name_en": "Trat",
+    "region": "east",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 32.3,
+    "humidity": 55,
+    "rain_mm": 0.0,
+    "wind_kmh": 15.0,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 32.3,
+    "today_min": 24.2,
+    "today_rain_prob": 6,
+    "today_rain_mm": 0.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     101.078,
+     13.6904
+    ]
+   },
+   "properties": {
+    "id": "CCO",
+    "name_th": "ฉะเชิงเทรา",
+    "name_en": "Chachoengsao",
+    "region": "east",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.2,
+    "humidity": 64,
+    "rain_mm": 0.0,
+    "wind_kmh": 11.4,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.4,
+    "today_min": 23.9,
+    "today_rain_prob": 26,
+    "today_rain_mm": 1.4,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     101.3716,
+     14.051
+    ]
+   },
+   "properties": {
+    "id": "PRI",
+    "name_th": "ปราจีนบุรี",
+    "name_en": "Prachin Buri",
+    "region": "east",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 32.1,
+    "humidity": 55,
+    "rain_mm": 0.0,
+    "wind_kmh": 15.0,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 32.1,
+    "today_min": 23.4,
+    "today_rain_prob": 26,
+    "today_rain_mm": 0.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     102.0646,
+     13.824
+    ]
+   },
+   "properties": {
+    "id": "SKW",
+    "name_th": "สระแก้ว",
+    "name_en": "Sa Kaeo",
+    "region": "east",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.9,
+    "humidity": 55,
+    "rain_mm": 0.0,
+    "wind_kmh": 16.5,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 31.9,
+    "today_min": 23.9,
+    "today_rain_prob": 90,
+    "today_rain_mm": 0.8,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     98.9853,
+     18.7883
+    ]
+   },
+   "properties": {
+    "id": "CMI",
+    "name_th": "เชียงใหม่",
+    "name_en": "Chiang Mai",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 28.2,
+    "humidity": 68,
+    "rain_mm": 0.0,
+    "wind_kmh": 1.7,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 28.5,
+    "today_min": 20.7,
+    "today_rain_prob": 94,
+    "today_rain_mm": 16.8,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.8406,
+     19.9105
+    ]
+   },
+   "properties": {
+    "id": "CRI",
+    "name_th": "เชียงราย",
+    "name_en": "Chiang Rai",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 26.6,
+    "humidity": 72,
+    "rain_mm": 0.0,
+    "wind_kmh": 4.7,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 26.6,
+    "today_min": 19.1,
+    "today_rain_prob": 100,
+    "today_rain_mm": 21.3,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.4908,
+     18.2888
+    ]
+   },
+   "properties": {
+    "id": "LPG",
+    "name_th": "ลำปาง",
+    "name_en": "Lampang",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 29.8,
+    "humidity": 61,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.5,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 29.9,
+    "today_min": 21.5,
+    "today_rain_prob": 69,
+    "today_rain_mm": 4.2,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.0087,
+     18.5745
+    ]
+   },
+   "properties": {
+    "id": "LPN",
+    "name_th": "ลำพูน",
+    "name_en": "Lamphun",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 29.0,
+    "humidity": 67,
+    "rain_mm": 0.1,
+    "wind_kmh": 5.0,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 29.4,
+    "today_min": 21.8,
+    "today_rain_prob": 92,
+    "today_rain_mm": 4.2,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     97.9654,
+     19.302
+    ]
+   },
+   "properties": {
+    "id": "MSN",
+    "name_th": "แม่ฮ่องสอน",
+    "name_en": "Mae Hong Son",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 29.5,
+    "humidity": 69,
+    "rain_mm": 0.1,
+    "wind_kmh": 2.9,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 30.6,
+    "today_min": 22.7,
+    "today_rain_prob": 100,
+    "today_rain_mm": 9.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.773,
+     18.7756
+    ]
+   },
+   "properties": {
+    "id": "NAN",
+    "name_th": "น่าน",
+    "name_en": "Nan",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 28.6,
+    "humidity": 68,
+    "rain_mm": 0.1,
+    "wind_kmh": 3.3,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 29.5,
+    "today_min": 20.8,
+    "today_rain_prob": 92,
+    "today_rain_mm": 1.6,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.9019,
+     19.1665
+    ]
+   },
+   "properties": {
+    "id": "PYO",
+    "name_th": "พะเยา",
+    "name_en": "Phayao",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 25.5,
+    "humidity": 79,
+    "rain_mm": 0.1,
+    "wind_kmh": 4.0,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 25.5,
+    "today_min": 20.5,
+    "today_rain_prob": 100,
+    "today_rain_mm": 5.8,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.1403,
+     18.1446
+    ]
+   },
+   "properties": {
+    "id": "PRE",
+    "name_th": "แพร่",
+    "name_en": "Phrae",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.2,
+    "humidity": 56,
+    "rain_mm": 0.1,
+    "wind_kmh": 10.8,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 31.5,
+    "today_min": 22.8,
+    "today_rain_prob": 57,
+    "today_rain_mm": 0.5,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.0993,
+     17.62
+    ]
+   },
+   "properties": {
+    "id": "UTD",
+    "name_th": "อุตรดิตถ์",
+    "name_en": "Uttaradit",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.2,
+    "humidity": 60,
+    "rain_mm": 0.1,
+    "wind_kmh": 3.9,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 31.2,
+    "today_min": 24.8,
+    "today_rain_prob": 60,
+    "today_rain_mm": 3.4,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.1258,
+     16.884
+    ]
+   },
+   "properties": {
+    "id": "TAK",
+    "name_th": "ตาก",
+    "name_en": "Tak",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 29.9,
+    "humidity": 67,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.2,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 30.1,
+    "today_min": 21.8,
+    "today_rain_prob": 81,
+    "today_rain_mm": 12.5,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.823,
+     17.0078
+    ]
+   },
+   "properties": {
+    "id": "STI",
+    "name_th": "สุโขทัย",
+    "name_en": "Sukhothai",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.2,
+    "humidity": 63,
+    "rain_mm": 0.0,
+    "wind_kmh": 2.3,
+    "weather_code": 0,
+    "weather_th": "ท้องฟ้าแจ่มใส",
+    "today_max": 31.3,
+    "today_min": 22.7,
+    "today_rain_prob": 82,
+    "today_rain_mm": 3.0,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.2659,
+     16.8211
+    ]
+   },
+   "properties": {
+    "id": "PLK",
+    "name_th": "พิษณุโลก",
+    "name_en": "Phitsanulok",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.3,
+    "humidity": 61,
+    "rain_mm": 0.0,
+    "wind_kmh": 2.9,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 31.3,
+    "today_min": 23.8,
+    "today_rain_prob": 82,
+    "today_rain_mm": 1.0,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.3487,
+     16.4429
+    ]
+   },
+   "properties": {
+    "id": "PCT",
+    "name_th": "พิจิตร",
+    "name_en": "Phichit",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.0,
+    "humidity": 63,
+    "rain_mm": 0.0,
+    "wind_kmh": 4.6,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 31.3,
+    "today_min": 23.2,
+    "today_rain_prob": 67,
+    "today_rain_mm": 2.9,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.5227,
+     16.4828
+    ]
+   },
+   "properties": {
+    "id": "KPT",
+    "name_th": "กำแพงเพชร",
+    "name_en": "Kamphaeng Phet",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 29.8,
+    "humidity": 65,
+    "rain_mm": 0.0,
+    "wind_kmh": 1.9,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 30.0,
+    "today_min": 22.5,
+    "today_rain_prob": 86,
+    "today_rain_mm": 10.0,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     101.1591,
+     16.419
+    ]
+   },
+   "properties": {
+    "id": "PNB",
+    "name_th": "เพชรบูรณ์",
+    "name_en": "Phetchabun",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.9,
+    "humidity": 51,
+    "rain_mm": 0.0,
+    "wind_kmh": 8.3,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 32.0,
+    "today_min": 24.5,
+    "today_rain_prob": 39,
+    "today_rain_mm": 1.2,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.1372,
+     15.7047
+    ]
+   },
+   "properties": {
+    "id": "NSN",
+    "name_th": "นครสวรรค์",
+    "name_en": "Nakhon Sawan",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.9,
+    "humidity": 56,
+    "rain_mm": 0.0,
+    "wind_kmh": 12.1,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.9,
+    "today_min": 23.5,
+    "today_rain_prob": 96,
+    "today_rain_mm": 2.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.0246,
+     15.3835
+    ]
+   },
+   "properties": {
+    "id": "UTI",
+    "name_th": "อุทัยธานี",
+    "name_en": "Uthai Thani",
+    "region": "north",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 30.8,
+    "humidity": 63,
+    "rain_mm": 0.0,
+    "wind_kmh": 12.9,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 30.9,
+    "today_min": 22.9,
+    "today_rain_prob": 84,
+    "today_rain_mm": 14.7,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     102.0977,
+     14.9799
+    ]
+   },
+   "properties": {
+    "id": "NMA",
+    "name_th": "นครราชสีมา",
+    "name_en": "Nakhon Ratchasima",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 49,
+    "rain_mm": 0.0,
+    "wind_kmh": 19.3,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 31.6,
+    "today_min": 23.4,
+    "today_rain_prob": 35,
+    "today_rain_mm": 0.3,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     103.1029,
+     14.993
+    ]
+   },
+   "properties": {
+    "id": "BRM",
+    "name_th": "บุรีรัมย์",
+    "name_en": "Buri Ram",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 55,
+    "rain_mm": 0.0,
+    "wind_kmh": 20.3,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.6,
+    "today_min": 23.3,
+    "today_rain_prob": 31,
+    "today_rain_mm": 0.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     103.4936,
+     14.8818
+    ]
+   },
+   "properties": {
+    "id": "SRN",
+    "name_th": "สุรินทร์",
+    "name_en": "Surin",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 55,
+    "rain_mm": 0.0,
+    "wind_kmh": 20.9,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.7,
+    "today_min": 22.9,
+    "today_rain_prob": 12,
+    "today_rain_mm": 0.3,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.322,
+     15.1186
+    ]
+   },
+   "properties": {
+    "id": "SSK",
+    "name_th": "ศรีสะเกษ",
+    "name_en": "Si Sa Ket",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.8,
+    "humidity": 52,
+    "rain_mm": 0.0,
+    "wind_kmh": 24.6,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.9,
+    "today_min": 22.5,
+    "today_rain_prob": 20,
+    "today_rain_mm": 0.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.8564,
+     15.2287
+    ]
+   },
+   "properties": {
+    "id": "UBN",
+    "name_th": "อุบลราชธานี",
+    "name_en": "Ubon Ratchathani",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 32.5,
+    "humidity": 50,
+    "rain_mm": 0.0,
+    "wind_kmh": 22.0,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 32.6,
+    "today_min": 22.7,
+    "today_rain_prob": 43,
+    "today_rain_mm": 1.6,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.1453,
+     15.7944
+    ]
+   },
+   "properties": {
+    "id": "YST",
+    "name_th": "ยโสธร",
+    "name_en": "Yasothon",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 53,
+    "rain_mm": 0.0,
+    "wind_kmh": 28.2,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 32.1,
+    "today_min": 21.9,
+    "today_rain_prob": 69,
+    "today_rain_mm": 0.6,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.6258,
+     15.8657
+    ]
+   },
+   "properties": {
+    "id": "ACR",
+    "name_th": "อำนาจเจริญ",
+    "name_en": "Amnat Charoen",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 31.1,
+    "humidity": 53,
+    "rain_mm": 0.1,
+    "wind_kmh": 30.3,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 32.4,
+    "today_min": 20.6,
+    "today_rain_prob": 63,
+    "today_rain_mm": 0.4,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     102.0316,
+     15.8068
+    ]
+   },
+   "properties": {
+    "id": "CPM",
+    "name_th": "ชัยภูมิ",
+    "name_en": "Chaiyaphum",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 30.7,
+    "humidity": 54,
+    "rain_mm": 0.1,
+    "wind_kmh": 24.3,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 30.8,
+    "today_min": 22.0,
+    "today_rain_prob": 73,
+    "today_rain_mm": 1.7,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     102.836,
+     16.4419
+    ]
+   },
+   "properties": {
+    "id": "KKN",
+    "name_th": "ขอนแก่น",
+    "name_en": "Khon Kaen",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 30.4,
+    "humidity": 56,
+    "rain_mm": 0.0,
+    "wind_kmh": 23.0,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 31.4,
+    "today_min": 20.9,
+    "today_rain_prob": 82,
+    "today_rain_mm": 2.4,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     102.787,
+     17.4138
+    ]
+   },
+   "properties": {
+    "id": "UDN",
+    "name_th": "อุดรธานี",
+    "name_en": "Udon Thani",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 28.8,
+    "humidity": 64,
+    "rain_mm": 0.1,
+    "wind_kmh": 21.1,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 30.9,
+    "today_min": 21.5,
+    "today_rain_prob": 40,
+    "today_rain_mm": 0.4,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     101.7223,
+     17.486
+    ]
+   },
+   "properties": {
+    "id": "LEI",
+    "name_th": "เลย",
+    "name_en": "Loei",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 27.8,
+    "humidity": 71,
+    "rain_mm": 0.1,
+    "wind_kmh": 15.1,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 29.6,
+    "today_min": 20.7,
+    "today_rain_prob": 91,
+    "today_rain_mm": 7.7,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     102.7413,
+     17.8783
+    ]
+   },
+   "properties": {
+    "id": "NKI",
+    "name_th": "หนองคาย",
+    "name_en": "Nong Khai",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 29.3,
+    "humidity": 46,
+    "rain_mm": 0.0,
+    "wind_kmh": 34.9,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 30.6,
+    "today_min": 22.5,
+    "today_rain_prob": 25,
+    "today_rain_mm": 0.2,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     102.4407,
+     17.2045
+    ]
+   },
+   "properties": {
+    "id": "NBP",
+    "name_th": "หนองบัวลำภู",
+    "name_en": "Nong Bua Lam Phu",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 27.8,
+    "humidity": 68,
+    "rain_mm": 0.1,
+    "wind_kmh": 18.5,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 30.1,
+    "today_min": 20.7,
+    "today_rain_prob": 57,
+    "today_rain_mm": 0.9,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     103.6466,
+     18.3609
+    ]
+   },
+   "properties": {
+    "id": "BKN",
+    "name_th": "บึงกาฬ",
+    "name_en": "Bueng Kan",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 27.1,
+    "humidity": 50,
+    "rain_mm": 0.0,
+    "wind_kmh": 29.2,
+    "weather_code": 0,
+    "weather_th": "ท้องฟ้าแจ่มใส",
+    "today_max": 29.5,
+    "today_min": 21.9,
+    "today_rain_prob": 6,
+    "today_rain_mm": 0.0,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.1348,
+     17.1546
+    ]
+   },
+   "properties": {
+    "id": "SNK",
+    "name_th": "สกลนคร",
+    "name_en": "Sakon Nakhon",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 28.2,
+    "humidity": 56,
+    "rain_mm": 0.1,
+    "wind_kmh": 24.3,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 30.9,
+    "today_min": 20.2,
+    "today_rain_prob": 57,
+    "today_rain_mm": 1.4,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.7695,
+     17.392
+    ]
+   },
+   "properties": {
+    "id": "NPM",
+    "name_th": "นครพนม",
+    "name_en": "Nakhon Phanom",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 28.8,
+    "humidity": 53,
+    "rain_mm": 0.0,
+    "wind_kmh": 21.4,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 30.9,
+    "today_min": 19.3,
+    "today_rain_prob": 45,
+    "today_rain_mm": 0.8,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     104.7235,
+     16.5453
+    ]
+   },
+   "properties": {
+    "id": "MDH",
+    "name_th": "มุกดาหาร",
+    "name_en": "Mukdahan",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 30.4,
+    "humidity": 54,
+    "rain_mm": 0.0,
+    "wind_kmh": 28.6,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 30.6,
+    "today_min": 21.4,
+    "today_rain_prob": 76,
+    "today_rain_mm": 0.7,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     103.5061,
+     16.4322
+    ]
+   },
+   "properties": {
+    "id": "KSN",
+    "name_th": "กาฬสินธุ์",
+    "name_en": "Kalasin",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 32.3,
+    "humidity": 49,
+    "rain_mm": 0.0,
+    "wind_kmh": 26.9,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "today_max": 32.3,
+    "today_min": 21.3,
+    "today_rain_prob": 80,
+    "today_rain_mm": 0.4,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     103.3027,
+     16.1851
+    ]
+   },
+   "properties": {
+    "id": "MKM",
+    "name_th": "มหาสารคาม",
+    "name_en": "Maha Sarakham",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 29.3,
+    "humidity": 64,
+    "rain_mm": 0.5,
+    "wind_kmh": 24.6,
+    "weather_code": 80,
+    "weather_th": "ฝนซู่เล็กน้อย",
+    "today_max": 31.6,
+    "today_min": 21.4,
+    "today_rain_prob": 88,
+    "today_rain_mm": 3.1,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     103.652,
+     16.0538
+    ]
+   },
+   "properties": {
+    "id": "RET",
+    "name_th": "ร้อยเอ็ด",
+    "name_en": "Roi Et",
+    "region": "northeast",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 30.9,
+    "humidity": 56,
+    "rain_mm": 0.1,
+    "wind_kmh": 25.8,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 31.5,
+    "today_min": 21.8,
+    "today_rain_prob": 71,
+    "today_rain_mm": 0.8,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.18,
+     10.493
+    ]
+   },
+   "properties": {
+    "id": "CPN",
+    "name_th": "ชุมพร",
+    "name_en": "Chumphon",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 29.5,
+    "humidity": 74,
+    "rain_mm": 0.0,
+    "wind_kmh": 16.4,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "today_max": 29.7,
+    "today_min": 23.9,
+    "today_rain_prob": 100,
+    "today_rain_mm": 5.6,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     98.6085,
+     9.9529
+    ]
+   },
+   "properties": {
+    "id": "RNG",
+    "name_th": "ระนอง",
+    "name_en": "Ranong",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 29.6,
+    "humidity": 74,
+    "rain_mm": 0.0,
+    "wind_kmh": 14.0,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 29.8,
+    "today_min": 25.3,
+    "today_rain_prob": 100,
+    "today_rain_mm": 1.0,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.3215,
+     9.1382
+    ]
+   },
+   "properties": {
+    "id": "SNI",
+    "name_th": "สุราษฎร์ธานี",
+    "name_en": "Surat Thani",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 27.2,
+    "humidity": 87,
+    "rain_mm": 0.4,
+    "wind_kmh": 20.2,
+    "weather_code": 95,
+    "weather_th": "พายุฝนฟ้าคะนอง",
+    "today_max": 29.2,
+    "today_min": 23.5,
+    "today_rain_prob": 89,
+    "today_rain_mm": 6.9,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     98.5255,
+     8.4501
+    ]
+   },
+   "properties": {
+    "id": "PNA",
+    "name_th": "พังงา",
+    "name_en": "Phangnga",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 29.8,
+    "humidity": 71,
+    "rain_mm": 0.0,
+    "wind_kmh": 15.2,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 29.9,
+    "today_min": 23.7,
+    "today_rain_prob": 89,
+    "today_rain_mm": 3.3,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     98.3923,
+     7.8804
+    ]
+   },
+   "properties": {
+    "id": "PKT",
+    "name_th": "ภูเก็ต",
+    "name_en": "Phuket",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 28.8,
+    "humidity": 74,
+    "rain_mm": 0.0,
+    "wind_kmh": 26.9,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 29.1,
+    "today_min": 24.8,
+    "today_rain_prob": 94,
+    "today_rain_mm": 5.2,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     98.9063,
+     8.0863
+    ]
+   },
+   "properties": {
+    "id": "KBI",
+    "name_th": "กระบี่",
+    "name_en": "Krabi",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 28.5,
+    "humidity": 76,
+    "rain_mm": 0.0,
+    "wind_kmh": 20.1,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "today_max": 29.6,
+    "today_min": 23.7,
+    "today_rain_prob": 100,
+    "today_rain_mm": 5.2,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.9631,
+     8.4304
+    ]
+   },
+   "properties": {
+    "id": "NRT",
+    "name_th": "นครศรีธรรมราช",
+    "name_en": "Nakhon Si Thammarat",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 27.3,
+    "humidity": 90,
+    "rain_mm": 0.3,
+    "wind_kmh": 5.9,
+    "weather_code": 55,
+    "weather_th": "ฝนละอองหนาแน่น",
+    "today_max": 28.4,
+    "today_min": 23.1,
+    "today_rain_prob": 100,
+    "today_rain_mm": 33.5,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     99.6114,
+     7.5563
+    ]
+   },
+   "properties": {
+    "id": "TRG",
+    "name_th": "ตรัง",
+    "name_en": "Trang",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 25.9,
+    "humidity": 91,
+    "rain_mm": 0.2,
+    "wind_kmh": 15.2,
+    "weather_code": 53,
+    "weather_th": "ฝนละออง",
+    "today_max": 26.9,
+    "today_min": 24.3,
+    "today_rain_prob": 100,
+    "today_rain_mm": 20.3,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.074,
+     7.6167
+    ]
+   },
+   "properties": {
+    "id": "PLG",
+    "name_th": "พัทลุง",
+    "name_en": "Phatthalung",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 26.9,
+    "humidity": 86,
+    "rain_mm": 0.2,
+    "wind_kmh": 15.2,
+    "weather_code": 53,
+    "weather_th": "ฝนละออง",
+    "today_max": 27.1,
+    "today_min": 24.5,
+    "today_rain_prob": 100,
+    "today_rain_mm": 56.4,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.0674,
+     6.6238
+    ]
+   },
+   "properties": {
+    "id": "STN",
+    "name_th": "สตูล",
+    "name_en": "Satun",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 25.8,
+    "humidity": 93,
+    "rain_mm": 0.3,
+    "wind_kmh": 14.7,
+    "weather_code": 55,
+    "weather_th": "ฝนละอองหนาแน่น",
+    "today_max": 27.3,
+    "today_min": 23.5,
+    "today_rain_prob": 100,
+    "today_rain_mm": 10.9,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     100.5951,
+     7.1898
+    ]
+   },
+   "properties": {
+    "id": "SKA",
+    "name_th": "สงขลา",
+    "name_en": "Songkhla",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 26.4,
+    "humidity": 93,
+    "rain_mm": 0.3,
+    "wind_kmh": 22.1,
+    "weather_code": 55,
+    "weather_th": "ฝนละอองหนาแน่น",
+    "today_max": 27.5,
+    "today_min": 24.9,
+    "today_rain_prob": 100,
+    "today_rain_mm": 48.7,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     101.2501,
+     6.8696
+    ]
+   },
+   "properties": {
+    "id": "PTN",
+    "name_th": "ปัตตานี",
+    "name_en": "Pattani",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 27.4,
+    "humidity": 85,
+    "rain_mm": 0.1,
+    "wind_kmh": 17.8,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 27.8,
+    "today_min": 23.7,
+    "today_rain_prob": 100,
+    "today_rain_mm": 28.5,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     101.2804,
+     6.5411
+    ]
+   },
+   "properties": {
+    "id": "YLA",
+    "name_th": "ยะลา",
+    "name_en": "Yala",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 25.3,
+    "humidity": 95,
+    "rain_mm": 0.2,
+    "wind_kmh": 9.3,
+    "weather_code": 53,
+    "weather_th": "ฝนละออง",
+    "today_max": 26.8,
+    "today_min": 23.6,
+    "today_rain_prob": 100,
+    "today_rain_mm": 34.3,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     101.8253,
+     6.4255
+    ]
+   },
+   "properties": {
+    "id": "NWT",
+    "name_th": "นราธิวาส",
+    "name_en": "Narathiwat",
+    "region": "south",
+    "obs_time": "2026-11-09T14:00",
+    "temp": 27.8,
+    "humidity": 81,
+    "rain_mm": 0.1,
+    "wind_kmh": 12.1,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "today_max": 27.8,
+    "today_min": 24.2,
+    "today_rain_prob": 100,
+    "today_rain_mm": 43.6,
+    "updated_at": "2026-11-09T14:03:31+07:00"
+   }
+  }
+ ]
+}

@@ -1,0 +1,6947 @@
+{
+ "updated_at": "2026-11-09T14:03:31+07:00",
+ "timezone": "Asia/Bangkok",
+ "source": "Open-Meteo.com",
+ "attribution": "Weather data by Open-Meteo.com (CC BY 4.0)",
+ "attribution_url": "https://open-meteo.com/",
+ "units": {
+  "temp": "°C",
+  "humidity": "%",
+  "rain_mm": "mm",
+  "wind_kmh": "km/h",
+  "rain_prob": "%"
+ },
+ "count": 77,
+ "provinces": [
+  {
+   "id": "BKK",
+   "name_th": "กรุงเทพมหานคร",
+   "name_en": "Bangkok",
+   "region": "central",
+   "lat": 13.7563,
+   "lon": 100.5018,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 33.6,
+    "humidity": 49,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.2,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 33.6,
+     "temp_min": 25.1,
+     "rain_prob": 41,
+     "rain_mm": 1.2
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 31.8,
+     "temp_min": 25.3,
+     "rain_prob": 14,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 32.3,
+     "temp_min": 23.5,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 33.0,
+     "temp_min": 24.0,
+     "rain_prob": 37,
+     "rain_mm": 3.7
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 33.1,
+     "temp_min": 24.7,
+     "rain_prob": 51,
+     "rain_mm": 2.7
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 32.5,
+     "temp_min": 25.6,
+     "rain_prob": 78,
+     "rain_mm": 2.4
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.5,
+     "temp_min": 24.7,
+     "rain_prob": 73,
+     "rain_mm": 6.6
+    }
+   ]
+  },
+  {
+   "id": "NBI",
+   "name_th": "นนทบุรี",
+   "name_en": "Nonthaburi",
+   "region": "central",
+   "lat": 13.8621,
+   "lon": 100.5144,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.8,
+    "humidity": 60,
+    "rain_mm": 0.0,
+    "wind_kmh": 9.6,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 32.0,
+     "temp_min": 24.6,
+     "rain_prob": 41,
+     "rain_mm": 2.5
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.8,
+     "temp_min": 23.6,
+     "rain_prob": 14,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.1,
+     "temp_min": 22.2,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 31.9,
+     "temp_min": 22.7,
+     "rain_prob": 37,
+     "rain_mm": 3.5
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 32.2,
+     "temp_min": 24.4,
+     "rain_prob": 51,
+     "rain_mm": 3.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 32.0,
+     "temp_min": 24.9,
+     "rain_prob": 78,
+     "rain_mm": 8.1
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.7,
+     "temp_min": 24.5,
+     "rain_prob": 73,
+     "rain_mm": 4.8
+    }
+   ]
+  },
+  {
+   "id": "PTE",
+   "name_th": "ปทุมธานี",
+   "name_en": "Pathum Thani",
+   "region": "central",
+   "lat": 14.0208,
+   "lon": 100.525,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.7,
+    "humidity": 64,
+    "rain_mm": 0.0,
+    "wind_kmh": 7.2,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.7,
+     "temp_min": 24.6,
+     "rain_prob": 53,
+     "rain_mm": 1.0
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 29.3,
+     "temp_min": 23.2,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.8,
+     "temp_min": 22.5,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.4,
+     "temp_min": 22.6,
+     "rain_prob": 20,
+     "rain_mm": 1.3
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.6,
+     "temp_min": 24.3,
+     "rain_prob": 42,
+     "rain_mm": 2.4
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.4,
+     "temp_min": 24.6,
+     "rain_prob": 60,
+     "rain_mm": 2.7
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.4,
+     "temp_min": 24.5,
+     "rain_prob": 73,
+     "rain_mm": 3.2
+    }
+   ]
+  },
+  {
+   "id": "SPK",
+   "name_th": "สมุทรปราการ",
+   "name_en": "Samut Prakan",
+   "region": "central",
+   "lat": 13.5991,
+   "lon": 100.5998,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.9,
+    "humidity": 60,
+    "rain_mm": 0.0,
+    "wind_kmh": 12.1,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.0,
+     "temp_min": 25.1,
+     "rain_prob": 41,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 31.1,
+     "temp_min": 24.8,
+     "rain_prob": 14,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.7,
+     "temp_min": 23.4,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.6,
+     "temp_min": 24.2,
+     "rain_prob": 37,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.4,
+     "temp_min": 25.5,
+     "rain_prob": 51,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 31.3,
+     "temp_min": 25.3,
+     "rain_prob": 78,
+     "rain_mm": 8.7
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.8,
+     "temp_min": 25.0,
+     "rain_prob": 73,
+     "rain_mm": 11.6
+    }
+   ]
+  },
+  {
+   "id": "SKN",
+   "name_th": "สมุทรสาคร",
+   "name_en": "Samut Sakhon",
+   "region": "central",
+   "lat": 13.5475,
+   "lon": 100.2744,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 63,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.5,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.6,
+     "temp_min": 24.7,
+     "rain_prob": 65,
+     "rain_mm": 0.7
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.5,
+     "temp_min": 24.3,
+     "rain_prob": 18,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.4,
+     "temp_min": 22.6,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.3,
+     "temp_min": 23.0,
+     "rain_prob": 5,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.4,
+     "temp_min": 24.9,
+     "rain_prob": 20,
+     "rain_mm": 1.5
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 29.6,
+     "temp_min": 25.5,
+     "rain_prob": 37,
+     "rain_mm": 6.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 29.8,
+     "temp_min": 24.8,
+     "rain_prob": 51,
+     "rain_mm": 7.8
+    }
+   ]
+  },
+  {
+   "id": "SKM",
+   "name_th": "สมุทรสงคราม",
+   "name_en": "Samut Songkhram",
+   "region": "central",
+   "lat": 13.4098,
+   "lon": 100.0023,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.4,
+    "humidity": 64,
+    "rain_mm": 0.0,
+    "wind_kmh": 11.9,
+    "weather_code": 0,
+    "weather_th": "ท้องฟ้าแจ่มใส",
+    "weather_en": "Clear sky"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 23.9,
+     "rain_prob": 80,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.2,
+     "temp_min": 24.4,
+     "rain_prob": 27,
+     "rain_mm": 1.1
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.8,
+     "temp_min": 22.8,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.0,
+     "temp_min": 23.4,
+     "rain_prob": 16,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.6,
+     "temp_min": 24.9,
+     "rain_prob": 41,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.8,
+     "temp_min": 24.3,
+     "rain_prob": 79,
+     "rain_mm": 11.4
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.2,
+     "temp_min": 24.1,
+     "rain_prob": 72,
+     "rain_mm": 6.0
+    }
+   ]
+  },
+  {
+   "id": "NPT",
+   "name_th": "นครปฐม",
+   "name_en": "Nakhon Pathom",
+   "region": "central",
+   "lat": 13.8199,
+   "lon": 100.0621,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 30.8,
+    "humidity": 66,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.3,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.0,
+     "temp_min": 24.4,
+     "rain_prob": 65,
+     "rain_mm": 1.5
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.1,
+     "temp_min": 23.6,
+     "rain_prob": 20,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.4,
+     "temp_min": 23.0,
+     "rain_prob": 18,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.7,
+     "temp_min": 22.7,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.8,
+     "temp_min": 24.6,
+     "rain_prob": 27,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 31.6,
+     "temp_min": 24.7,
+     "rain_prob": 67,
+     "rain_mm": 5.1
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.3,
+     "temp_min": 23.7,
+     "rain_prob": 61,
+     "rain_mm": 3.0
+    }
+   ]
+  },
+  {
+   "id": "AYA",
+   "name_th": "พระนครศรีอยุธยา",
+   "name_en": "Phra Nakhon Si Ayutthaya",
+   "region": "central",
+   "lat": 14.3532,
+   "lon": 100.5689,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.8,
+    "humidity": 60,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.9,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.9,
+     "temp_min": 25.0,
+     "rain_prob": 45,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.1,
+     "temp_min": 23.5,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.3,
+     "temp_min": 23.0,
+     "rain_prob": 28,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.8,
+     "temp_min": 23.8,
+     "rain_prob": 14,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 32.0,
+     "temp_min": 24.7,
+     "rain_prob": 29,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.0,
+     "temp_min": 24.4,
+     "rain_prob": 51,
+     "rain_mm": 1.2
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.7,
+     "temp_min": 24.1,
+     "rain_prob": 61,
+     "rain_mm": 0.8
+    }
+   ]
+  },
+  {
+   "id": "ATG",
+   "name_th": "อ่างทอง",
+   "name_en": "Ang Thong",
+   "region": "central",
+   "lat": 14.5896,
+   "lon": 100.455,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 60,
+    "rain_mm": 0.0,
+    "wind_kmh": 13.1,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 31.8,
+     "temp_min": 24.6,
+     "rain_prob": 31,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.9,
+     "temp_min": 23.0,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.7,
+     "temp_min": 22.9,
+     "rain_prob": 19,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.8,
+     "temp_min": 23.2,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 23.9,
+     "rain_prob": 22,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.0,
+     "temp_min": 23.9,
+     "rain_prob": 49,
+     "rain_mm": 1.8
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.4,
+     "temp_min": 23.9,
+     "rain_prob": 45,
+     "rain_mm": 3.0
+    }
+   ]
+  },
+  {
+   "id": "LRI",
+   "name_th": "ลพบุรี",
+   "name_en": "Lop Buri",
+   "region": "central",
+   "lat": 14.7995,
+   "lon": 100.6534,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.8,
+    "humidity": 57,
+    "rain_mm": 0.0,
+    "wind_kmh": 15.5,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 31.9,
+     "temp_min": 24.8,
+     "rain_prob": 16,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.1,
+     "temp_min": 22.8,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.9,
+     "temp_min": 22.9,
+     "rain_prob": 24,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 31.4,
+     "temp_min": 23.7,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 32.5,
+     "temp_min": 24.0,
+     "rain_prob": 18,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 33.3,
+     "temp_min": 24.0,
+     "rain_prob": 59,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 23.8,
+     "rain_prob": 63,
+     "rain_mm": 3.0
+    }
+   ]
+  },
+  {
+   "id": "SBR",
+   "name_th": "สิงห์บุรี",
+   "name_en": "Sing Buri",
+   "region": "central",
+   "lat": 14.8936,
+   "lon": 100.3967,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.3,
+    "humidity": 61,
+    "rain_mm": 0.0,
+    "wind_kmh": 14.3,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 24.0,
+     "rain_prob": 43,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 29.0,
+     "temp_min": 22.8,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.5,
+     "temp_min": 23.0,
+     "rain_prob": 41,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.1,
+     "temp_min": 21.9,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 31.7,
+     "temp_min": 23.8,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.1,
+     "temp_min": 23.7,
+     "rain_prob": 37,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 24.0,
+     "rain_prob": 39,
+     "rain_mm": 1.8
+    }
+   ]
+  },
+  {
+   "id": "CNT",
+   "name_th": "ชัยนาท",
+   "name_en": "Chai Nat",
+   "region": "central",
+   "lat": 15.1851,
+   "lon": 100.1251,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 30.7,
+    "humidity": 64,
+    "rain_mm": 0.0,
+    "wind_kmh": 13.5,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 30.8,
+     "temp_min": 22.9,
+     "rain_prob": 78,
+     "rain_mm": 2.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.5,
+     "temp_min": 22.7,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.9,
+     "temp_min": 22.8,
+     "rain_prob": 25,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.1,
+     "temp_min": 21.5,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.7,
+     "temp_min": 23.4,
+     "rain_prob": 6,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.7,
+     "temp_min": 24.0,
+     "rain_prob": 41,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 24.2,
+     "rain_prob": 29,
+     "rain_mm": 4.0
+    }
+   ]
+  },
+  {
+   "id": "SRI",
+   "name_th": "สระบุรี",
+   "name_en": "Saraburi",
+   "region": "central",
+   "lat": 14.5289,
+   "lon": 100.9101,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 32.8,
+    "humidity": 51,
+    "rain_mm": 0.0,
+    "wind_kmh": 14.8,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 32.8,
+     "temp_min": 24.9,
+     "rain_prob": 18,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.3,
+     "temp_min": 23.7,
+     "rain_prob": 20,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.2,
+     "temp_min": 23.0,
+     "rain_prob": 16,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.7,
+     "temp_min": 24.5,
+     "rain_prob": 37,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.1,
+     "temp_min": 24.9,
+     "rain_prob": 45,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.4,
+     "temp_min": 23.7,
+     "rain_prob": 61,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 32.2,
+     "temp_min": 23.8,
+     "rain_prob": 55,
+     "rain_mm": 6.4
+    }
+   ]
+  },
+  {
+   "id": "NYK",
+   "name_th": "นครนายก",
+   "name_en": "Nakhon Nayok",
+   "region": "central",
+   "lat": 14.2069,
+   "lon": 101.213,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 32.1,
+    "humidity": 59,
+    "rain_mm": 0.0,
+    "wind_kmh": 1.7,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 32.3,
+     "temp_min": 23.4,
+     "rain_prob": 46,
+     "rain_mm": 0.8
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.6,
+     "temp_min": 24.6,
+     "rain_prob": 0,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.6,
+     "temp_min": 21.4,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.2,
+     "temp_min": 23.9,
+     "rain_prob": 37,
+     "rain_mm": 0.5
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.0,
+     "temp_min": 23.9,
+     "rain_prob": 66,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.6,
+     "temp_min": 23.8,
+     "rain_prob": 73,
+     "rain_mm": 1.5
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.4,
+     "temp_min": 24.3,
+     "rain_prob": 60,
+     "rain_mm": 2.2
+    }
+   ]
+  },
+  {
+   "id": "SPB",
+   "name_th": "สุพรรณบุรี",
+   "name_en": "Suphan Buri",
+   "region": "central",
+   "lat": 14.4745,
+   "lon": 100.1177,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.7,
+    "humidity": 60,
+    "rain_mm": 0.0,
+    "wind_kmh": 13.4,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.7,
+     "temp_min": 24.4,
+     "rain_prob": 47,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.0,
+     "temp_min": 23.2,
+     "rain_prob": 16,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 28.7,
+     "temp_min": 22.3,
+     "rain_prob": 37,
+     "rain_mm": 1.1
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.9,
+     "temp_min": 22.3,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.4,
+     "temp_min": 24.1,
+     "rain_prob": 16,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.8,
+     "temp_min": 23.8,
+     "rain_prob": 47,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.8,
+     "temp_min": 24.5,
+     "rain_prob": 57,
+     "rain_mm": 1.6
+    }
+   ]
+  },
+  {
+   "id": "KRI",
+   "name_th": "กาญจนบุรี",
+   "name_en": "Kanchanaburi",
+   "region": "central",
+   "lat": 14.0228,
+   "lon": 99.5328,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 28.2,
+    "humidity": 77,
+    "rain_mm": 0.1,
+    "wind_kmh": 14.8,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.9,
+     "temp_min": 24.2,
+     "rain_prob": 82,
+     "rain_mm": 1.8
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.6,
+     "temp_min": 22.8,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.0,
+     "temp_min": 22.4,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.2,
+     "temp_min": 22.1,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.0,
+     "temp_min": 23.9,
+     "rain_prob": 6,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.1,
+     "temp_min": 23.7,
+     "rain_prob": 47,
+     "rain_mm": 1.2
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.7,
+     "temp_min": 24.0,
+     "rain_prob": 53,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "RBR",
+   "name_th": "ราชบุรี",
+   "name_en": "Ratchaburi",
+   "region": "central",
+   "lat": 13.5283,
+   "lon": 99.8134,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 30.8,
+    "humidity": 66,
+    "rain_mm": 0.0,
+    "wind_kmh": 8.6,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 30.9,
+     "temp_min": 23.2,
+     "rain_prob": 88,
+     "rain_mm": 5.0
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 28.7,
+     "temp_min": 23.3,
+     "rain_prob": 37,
+     "rain_mm": 2.1
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.3,
+     "temp_min": 22.8,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.4,
+     "temp_min": 22.7,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.5,
+     "temp_min": 24.1,
+     "rain_prob": 25,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 30.0,
+     "temp_min": 23.4,
+     "rain_prob": 60,
+     "rain_mm": 4.8
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.2,
+     "temp_min": 23.7,
+     "rain_prob": 78,
+     "rain_mm": 6.0
+    }
+   ]
+  },
+  {
+   "id": "PBI",
+   "name_th": "เพชรบุรี",
+   "name_en": "Phetchaburi",
+   "region": "central",
+   "lat": 13.1119,
+   "lon": 99.9398,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 30.5,
+    "humidity": 68,
+    "rain_mm": 0.0,
+    "wind_kmh": 13.6,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.7,
+     "temp_min": 23.3,
+     "rain_prob": 90,
+     "rain_mm": 2.5
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.0,
+     "temp_min": 23.9,
+     "rain_prob": 90,
+     "rain_mm": 1.8
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.2,
+     "temp_min": 22.5,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.2,
+     "temp_min": 23.0,
+     "rain_prob": 11,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.3,
+     "temp_min": 24.1,
+     "rain_prob": 24,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 30.2,
+     "temp_min": 22.9,
+     "rain_prob": 63,
+     "rain_mm": 12.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.8,
+     "temp_min": 23.7,
+     "rain_prob": 55,
+     "rain_mm": 3.0
+    }
+   ]
+  },
+  {
+   "id": "PKN",
+   "name_th": "ประจวบคีรีขันธ์",
+   "name_en": "Prachuap Khiri Khan",
+   "region": "central",
+   "lat": 11.8124,
+   "lon": 99.7973,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 30.0,
+    "humidity": 69,
+    "rain_mm": 0.0,
+    "wind_kmh": 21.8,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.0,
+     "temp_min": 24.7,
+     "rain_prob": 92,
+     "rain_mm": 4.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 28.7,
+     "temp_min": 23.3,
+     "rain_prob": 99,
+     "rain_mm": 9.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 28.2,
+     "temp_min": 23.7,
+     "rain_prob": 51,
+     "rain_mm": 1.4
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.4,
+     "temp_min": 23.8,
+     "rain_prob": 34,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 27.3,
+     "temp_min": 23.4,
+     "rain_prob": 57,
+     "rain_mm": 11.4
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 27.8,
+     "temp_min": 24.1,
+     "rain_prob": 71,
+     "rain_mm": 11.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.1,
+     "temp_min": 23.9,
+     "rain_prob": 61,
+     "rain_mm": 3.6
+    }
+   ]
+  },
+  {
+   "id": "CBI",
+   "name_th": "ชลบุรี",
+   "name_en": "Chon Buri",
+   "region": "east",
+   "lat": 13.3611,
+   "lon": 100.9847,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.3,
+    "humidity": 59,
+    "rain_mm": 0.0,
+    "wind_kmh": 15.7,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.4,
+     "temp_min": 23.6,
+     "rain_prob": 33,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.4,
+     "temp_min": 23.5,
+     "rain_prob": 10,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.2,
+     "temp_min": 21.5,
+     "rain_prob": 7,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.4,
+     "temp_min": 22.8,
+     "rain_prob": 16,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.8,
+     "temp_min": 23.7,
+     "rain_prob": 47,
+     "rain_mm": 1.8
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.5,
+     "temp_min": 23.5,
+     "rain_prob": 88,
+     "rain_mm": 3.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.2,
+     "temp_min": 23.8,
+     "rain_prob": 86,
+     "rain_mm": 10.2
+    }
+   ]
+  },
+  {
+   "id": "RYG",
+   "name_th": "ระยอง",
+   "name_en": "Rayong",
+   "region": "east",
+   "lat": 12.6814,
+   "lon": 101.2816,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 59,
+    "rain_mm": 0.0,
+    "wind_kmh": 14.1,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.6,
+     "temp_min": 24.9,
+     "rain_prob": 8,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.5,
+     "temp_min": 23.6,
+     "rain_prob": 8,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.4,
+     "temp_min": 22.1,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.3,
+     "temp_min": 23.7,
+     "rain_prob": 16,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 30.3,
+     "temp_min": 24.8,
+     "rain_prob": 78,
+     "rain_mm": 5.5
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 28.7,
+     "temp_min": 24.5,
+     "rain_prob": 85,
+     "rain_mm": 2.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.8,
+     "temp_min": 24.4,
+     "rain_prob": 74,
+     "rain_mm": 3.0
+    }
+   ]
+  },
+  {
+   "id": "CTI",
+   "name_th": "จันทบุรี",
+   "name_en": "Chanthaburi",
+   "region": "east",
+   "lat": 12.6114,
+   "lon": 102.1039,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.4,
+    "humidity": 57,
+    "rain_mm": 0.0,
+    "wind_kmh": 16.5,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 24.0,
+     "rain_prob": 8,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.0,
+     "temp_min": 22.6,
+     "rain_prob": 16,
+     "rain_mm": 1.3
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.7,
+     "temp_min": 21.6,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.5,
+     "temp_min": 23.2,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.6,
+     "temp_min": 23.6,
+     "rain_prob": 66,
+     "rain_mm": 5.7
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.3,
+     "temp_min": 22.7,
+     "rain_prob": 84,
+     "rain_mm": 6.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.7,
+     "temp_min": 23.2,
+     "rain_prob": 92,
+     "rain_mm": 6.6
+    }
+   ]
+  },
+  {
+   "id": "TRT",
+   "name_th": "ตราด",
+   "name_en": "Trat",
+   "region": "east",
+   "lat": 12.2428,
+   "lon": 102.5175,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 32.3,
+    "humidity": 55,
+    "rain_mm": 0.0,
+    "wind_kmh": 15.0,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.3,
+     "temp_min": 24.2,
+     "rain_prob": 6,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.9,
+     "temp_min": 23.9,
+     "rain_prob": 16,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.7,
+     "temp_min": 21.6,
+     "rain_prob": 13,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.9,
+     "temp_min": 23.1,
+     "rain_prob": 30,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 30.6,
+     "temp_min": 23.6,
+     "rain_prob": 72,
+     "rain_mm": 6.4
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 29.9,
+     "temp_min": 23.4,
+     "rain_prob": 78,
+     "rain_mm": 6.5
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 31.4,
+     "temp_min": 23.5,
+     "rain_prob": 92,
+     "rain_mm": 6.6
+    }
+   ]
+  },
+  {
+   "id": "CCO",
+   "name_th": "ฉะเชิงเทรา",
+   "name_en": "Chachoengsao",
+   "region": "east",
+   "lat": 13.6904,
+   "lon": 101.078,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.2,
+    "humidity": 64,
+    "rain_mm": 0.0,
+    "wind_kmh": 11.4,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 31.4,
+     "temp_min": 23.9,
+     "rain_prob": 26,
+     "rain_mm": 1.4
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 29.4,
+     "temp_min": 24.3,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.8,
+     "temp_min": 22.6,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.2,
+     "temp_min": 24.0,
+     "rain_prob": 17,
+     "rain_mm": 0.4
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.3,
+     "temp_min": 24.7,
+     "rain_prob": 35,
+     "rain_mm": 4.6
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.4,
+     "temp_min": 24.0,
+     "rain_prob": 73,
+     "rain_mm": 5.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.7,
+     "temp_min": 24.2,
+     "rain_prob": 69,
+     "rain_mm": 3.6
+    }
+   ]
+  },
+  {
+   "id": "PRI",
+   "name_th": "ปราจีนบุรี",
+   "name_en": "Prachin Buri",
+   "region": "east",
+   "lat": 14.051,
+   "lon": 101.3716,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 32.1,
+    "humidity": 55,
+    "rain_mm": 0.0,
+    "wind_kmh": 15.0,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.1,
+     "temp_min": 23.4,
+     "rain_prob": 26,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.6,
+     "temp_min": 24.0,
+     "rain_prob": 0,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.9,
+     "temp_min": 22.2,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.7,
+     "temp_min": 23.6,
+     "rain_prob": 12,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.3,
+     "temp_min": 24.4,
+     "rain_prob": 57,
+     "rain_mm": 2.4
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 32.1,
+     "temp_min": 23.7,
+     "rain_prob": 82,
+     "rain_mm": 3.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.4,
+     "temp_min": 24.1,
+     "rain_prob": 71,
+     "rain_mm": 3.0
+    }
+   ]
+  },
+  {
+   "id": "SKW",
+   "name_th": "สระแก้ว",
+   "name_en": "Sa Kaeo",
+   "region": "east",
+   "lat": 13.824,
+   "lon": 102.0646,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.9,
+    "humidity": 55,
+    "rain_mm": 0.0,
+    "wind_kmh": 16.5,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.9,
+     "temp_min": 23.9,
+     "rain_prob": 90,
+     "rain_mm": 0.8
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.6,
+     "temp_min": 23.3,
+     "rain_prob": 17,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.5,
+     "temp_min": 22.0,
+     "rain_prob": 0,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.7,
+     "temp_min": 23.2,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.5,
+     "temp_min": 24.1,
+     "rain_prob": 37,
+     "rain_mm": 3.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.9,
+     "temp_min": 23.3,
+     "rain_prob": 75,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.2,
+     "temp_min": 23.7,
+     "rain_prob": 63,
+     "rain_mm": 2.4
+    }
+   ]
+  },
+  {
+   "id": "CMI",
+   "name_th": "เชียงใหม่",
+   "name_en": "Chiang Mai",
+   "region": "north",
+   "lat": 18.7883,
+   "lon": 98.9853,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 28.2,
+    "humidity": 68,
+    "rain_mm": 0.0,
+    "wind_kmh": 1.7,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 28.5,
+     "temp_min": 20.7,
+     "rain_prob": 94,
+     "rain_mm": 16.8
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 26.3,
+     "temp_min": 19.8,
+     "rain_prob": 71,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 24.7,
+     "temp_min": 19.5,
+     "rain_prob": 71,
+     "rain_mm": 2.1
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 26.1,
+     "temp_min": 18.3,
+     "rain_prob": 43,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 28.2,
+     "temp_min": 19.3,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 29.2,
+     "temp_min": 20.3,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 0,
+     "weather_th": "ท้องฟ้าแจ่มใส",
+     "weather_en": "Clear sky",
+     "temp_max": 29.7,
+     "temp_min": 21.1,
+     "rain_prob": 9,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "CRI",
+   "name_th": "เชียงราย",
+   "name_en": "Chiang Rai",
+   "region": "north",
+   "lat": 19.9105,
+   "lon": 99.8406,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 26.6,
+    "humidity": 72,
+    "rain_mm": 0.0,
+    "wind_kmh": 4.7,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 26.6,
+     "temp_min": 19.1,
+     "rain_prob": 100,
+     "rain_mm": 21.3
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 23.4,
+     "temp_min": 17.7,
+     "rain_prob": 46,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 20.5,
+     "temp_min": 18.0,
+     "rain_prob": 89,
+     "rain_mm": 4.4
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 24.1,
+     "temp_min": 17.8,
+     "rain_prob": 44,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 27.0,
+     "temp_min": 17.1,
+     "rain_prob": 16,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.0,
+     "temp_min": 17.9,
+     "rain_prob": 35,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.5,
+     "temp_min": 17.8,
+     "rain_prob": 24,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "LPG",
+   "name_th": "ลำปาง",
+   "name_en": "Lampang",
+   "region": "north",
+   "lat": 18.2888,
+   "lon": 99.4908,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 29.8,
+    "humidity": 61,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.5,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 29.9,
+     "temp_min": 21.5,
+     "rain_prob": 69,
+     "rain_mm": 4.2
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.1,
+     "temp_min": 20.1,
+     "rain_prob": 35,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 26.2,
+     "temp_min": 19.9,
+     "rain_prob": 61,
+     "rain_mm": 12.7
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.5,
+     "temp_min": 19.1,
+     "rain_prob": 35,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.2,
+     "temp_min": 19.9,
+     "rain_prob": 5,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.1,
+     "temp_min": 20.3,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 0,
+     "weather_th": "ท้องฟ้าแจ่มใส",
+     "weather_en": "Clear sky",
+     "temp_max": 30.9,
+     "temp_min": 21.0,
+     "rain_prob": 5,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "LPN",
+   "name_th": "ลำพูน",
+   "name_en": "Lamphun",
+   "region": "north",
+   "lat": 18.5745,
+   "lon": 99.0087,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 29.0,
+    "humidity": 67,
+    "rain_mm": 0.1,
+    "wind_kmh": 5.0,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.4,
+     "temp_min": 21.8,
+     "rain_prob": 92,
+     "rain_mm": 4.2
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.9,
+     "temp_min": 20.7,
+     "rain_prob": 52,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 25.3,
+     "temp_min": 20.2,
+     "rain_prob": 69,
+     "rain_mm": 1.7
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 26.7,
+     "temp_min": 19.1,
+     "rain_prob": 37,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.3,
+     "temp_min": 19.3,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 30.2,
+     "temp_min": 20.3,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 45,
+     "weather_th": "มีหมอก",
+     "weather_en": "Fog",
+     "temp_max": 30.9,
+     "temp_min": 20.8,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "MSN",
+   "name_th": "แม่ฮ่องสอน",
+   "name_en": "Mae Hong Son",
+   "region": "north",
+   "lat": 19.302,
+   "lon": 97.9654,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 29.5,
+    "humidity": 69,
+    "rain_mm": 0.1,
+    "wind_kmh": 2.9,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.6,
+     "temp_min": 22.7,
+     "rain_prob": 100,
+     "rain_mm": 9.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 27.3,
+     "temp_min": 21.0,
+     "rain_prob": 89,
+     "rain_mm": 5.6
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 22.6,
+     "temp_min": 20.2,
+     "rain_prob": 94,
+     "rain_mm": 8.9
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.5,
+     "temp_min": 18.7,
+     "rain_prob": 53,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 45,
+     "weather_th": "มีหมอก",
+     "weather_en": "Fog",
+     "temp_max": 30.2,
+     "temp_min": 19.0,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 30.5,
+     "temp_min": 19.1,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 0,
+     "weather_th": "ท้องฟ้าแจ่มใส",
+     "weather_en": "Clear sky",
+     "temp_max": 31.0,
+     "temp_min": 18.8,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "NAN",
+   "name_th": "น่าน",
+   "name_en": "Nan",
+   "region": "north",
+   "lat": 18.7756,
+   "lon": 100.773,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 28.6,
+    "humidity": 68,
+    "rain_mm": 0.1,
+    "wind_kmh": 3.3,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.5,
+     "temp_min": 20.8,
+     "rain_prob": 92,
+     "rain_mm": 1.6
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.0,
+     "temp_min": 17.4,
+     "rain_prob": 5,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 21.4,
+     "temp_min": 18.0,
+     "rain_prob": 59,
+     "rain_mm": 19.5
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 26.1,
+     "temp_min": 17.4,
+     "rain_prob": 44,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 29.1,
+     "temp_min": 18.5,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 29.8,
+     "temp_min": 19.4,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 29.7,
+     "temp_min": 19.4,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "PYO",
+   "name_th": "พะเยา",
+   "name_en": "Phayao",
+   "region": "north",
+   "lat": 19.1665,
+   "lon": 99.9019,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 25.5,
+    "humidity": 79,
+    "rain_mm": 0.1,
+    "wind_kmh": 4.0,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 25.5,
+     "temp_min": 20.5,
+     "rain_prob": 100,
+     "rain_mm": 5.8
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 23.5,
+     "temp_min": 17.9,
+     "rain_prob": 38,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 22.6,
+     "temp_min": 18.4,
+     "rain_prob": 82,
+     "rain_mm": 5.5
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 24.6,
+     "temp_min": 17.7,
+     "rain_prob": 62,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.4,
+     "temp_min": 19.1,
+     "rain_prob": 5,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 27.5,
+     "temp_min": 20.3,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.4,
+     "temp_min": 20.9,
+     "rain_prob": 8,
+     "rain_mm": 3.6
+    }
+   ]
+  },
+  {
+   "id": "PRE",
+   "name_th": "แพร่",
+   "name_en": "Phrae",
+   "region": "north",
+   "lat": 18.1446,
+   "lon": 100.1403,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.2,
+    "humidity": 56,
+    "rain_mm": 0.1,
+    "wind_kmh": 10.8,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 22.8,
+     "rain_prob": 57,
+     "rain_mm": 0.5
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.0,
+     "temp_min": 21.3,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 24.0,
+     "temp_min": 20.5,
+     "rain_prob": 54,
+     "rain_mm": 7.3
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 27.3,
+     "temp_min": 19.6,
+     "rain_prob": 37,
+     "rain_mm": 1.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 30.1,
+     "temp_min": 19.9,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.9,
+     "temp_min": 21.0,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 0,
+     "weather_th": "ท้องฟ้าแจ่มใส",
+     "weather_en": "Clear sky",
+     "temp_max": 31.4,
+     "temp_min": 21.4,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "UTD",
+   "name_th": "อุตรดิตถ์",
+   "name_en": "Uttaradit",
+   "region": "north",
+   "lat": 17.62,
+   "lon": 100.0993,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.2,
+    "humidity": 60,
+    "rain_mm": 0.1,
+    "wind_kmh": 3.9,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 31.2,
+     "temp_min": 24.8,
+     "rain_prob": 60,
+     "rain_mm": 3.4
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.8,
+     "temp_min": 22.5,
+     "rain_prob": 11,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 25.8,
+     "temp_min": 22.2,
+     "rain_prob": 26,
+     "rain_mm": 3.3
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.0,
+     "temp_min": 21.4,
+     "rain_prob": 14,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 31.0,
+     "temp_min": 21.4,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 31.7,
+     "temp_min": 22.1,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 0,
+     "weather_th": "ท้องฟ้าแจ่มใส",
+     "weather_en": "Clear sky",
+     "temp_max": 32.3,
+     "temp_min": 23.1,
+     "rain_prob": 5,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "TAK",
+   "name_th": "ตาก",
+   "name_en": "Tak",
+   "region": "north",
+   "lat": 16.884,
+   "lon": 99.1258,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 29.9,
+    "humidity": 67,
+    "rain_mm": 0.0,
+    "wind_kmh": 10.2,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 30.1,
+     "temp_min": 21.8,
+     "rain_prob": 81,
+     "rain_mm": 12.5
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 28.2,
+     "temp_min": 21.8,
+     "rain_prob": 77,
+     "rain_mm": 7.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.9,
+     "temp_min": 21.9,
+     "rain_prob": 29,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.5,
+     "temp_min": 21.3,
+     "rain_prob": 24,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.7,
+     "temp_min": 21.3,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.6,
+     "temp_min": 21.8,
+     "rain_prob": 22,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 45,
+     "weather_th": "มีหมอก",
+     "weather_en": "Fog",
+     "temp_max": 31.7,
+     "temp_min": 21.9,
+     "rain_prob": 21,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "STI",
+   "name_th": "สุโขทัย",
+   "name_en": "Sukhothai",
+   "region": "north",
+   "lat": 17.0078,
+   "lon": 99.823,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.2,
+    "humidity": 63,
+    "rain_mm": 0.0,
+    "wind_kmh": 2.3,
+    "weather_code": 0,
+    "weather_th": "ท้องฟ้าแจ่มใส",
+    "weather_en": "Clear sky"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 31.3,
+     "temp_min": 22.7,
+     "rain_prob": 82,
+     "rain_mm": 3.0
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 29.1,
+     "temp_min": 22.1,
+     "rain_prob": 39,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 25.7,
+     "temp_min": 22.4,
+     "rain_prob": 22,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.6,
+     "temp_min": 21.6,
+     "rain_prob": 18,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.3,
+     "temp_min": 22.1,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 22.7,
+     "rain_prob": 4,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 32.1,
+     "temp_min": 23.0,
+     "rain_prob": 14,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "PLK",
+   "name_th": "พิษณุโลก",
+   "name_en": "Phitsanulok",
+   "region": "north",
+   "lat": 16.8211,
+   "lon": 100.2659,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.3,
+    "humidity": 61,
+    "rain_mm": 0.0,
+    "wind_kmh": 2.9,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.3,
+     "temp_min": 23.8,
+     "rain_prob": 82,
+     "rain_mm": 1.0
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.2,
+     "temp_min": 22.2,
+     "rain_prob": 9,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 26.7,
+     "temp_min": 22.2,
+     "rain_prob": 25,
+     "rain_mm": 3.6
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.4,
+     "temp_min": 21.5,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.8,
+     "temp_min": 21.9,
+     "rain_prob": 4,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.9,
+     "temp_min": 22.9,
+     "rain_prob": 9,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 0,
+     "weather_th": "ท้องฟ้าแจ่มใส",
+     "weather_en": "Clear sky",
+     "temp_max": 32.1,
+     "temp_min": 24.1,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "PCT",
+   "name_th": "พิจิตร",
+   "name_en": "Phichit",
+   "region": "north",
+   "lat": 16.4429,
+   "lon": 100.3487,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.0,
+    "humidity": 63,
+    "rain_mm": 0.0,
+    "wind_kmh": 4.6,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 31.3,
+     "temp_min": 23.2,
+     "rain_prob": 67,
+     "rain_mm": 2.9
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.0,
+     "temp_min": 22.2,
+     "rain_prob": 5,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 27.6,
+     "temp_min": 20.9,
+     "rain_prob": 27,
+     "rain_mm": 9.2
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.9,
+     "temp_min": 21.1,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.7,
+     "temp_min": 22.3,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.0,
+     "temp_min": 23.2,
+     "rain_prob": 23,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.0,
+     "temp_min": 23.7,
+     "rain_prob": 12,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "KPT",
+   "name_th": "กำแพงเพชร",
+   "name_en": "Kamphaeng Phet",
+   "region": "north",
+   "lat": 16.4828,
+   "lon": 99.5227,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 29.8,
+    "humidity": 65,
+    "rain_mm": 0.0,
+    "wind_kmh": 1.9,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 30.0,
+     "temp_min": 22.5,
+     "rain_prob": 86,
+     "rain_mm": 10.0
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.2,
+     "temp_min": 21.9,
+     "rain_prob": 65,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.3,
+     "temp_min": 22.1,
+     "rain_prob": 17,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 27.5,
+     "temp_min": 21.2,
+     "rain_prob": 13,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.7,
+     "temp_min": 22.7,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 30.6,
+     "temp_min": 22.6,
+     "rain_prob": 16,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.2,
+     "temp_min": 23.2,
+     "rain_prob": 16,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "PNB",
+   "name_th": "เพชรบูรณ์",
+   "name_en": "Phetchabun",
+   "region": "north",
+   "lat": 16.419,
+   "lon": 101.1591,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.9,
+    "humidity": 51,
+    "rain_mm": 0.0,
+    "wind_kmh": 8.3,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 32.0,
+     "temp_min": 24.5,
+     "rain_prob": 39,
+     "rain_mm": 1.2
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.8,
+     "temp_min": 22.7,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 26.9,
+     "temp_min": 20.6,
+     "rain_prob": 39,
+     "rain_mm": 1.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.3,
+     "temp_min": 22.2,
+     "rain_prob": 14,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 30.6,
+     "temp_min": 22.6,
+     "rain_prob": 23,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 31.7,
+     "temp_min": 23.2,
+     "rain_prob": 25,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.2,
+     "temp_min": 24.0,
+     "rain_prob": 25,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "NSN",
+   "name_th": "นครสวรรค์",
+   "name_en": "Nakhon Sawan",
+   "region": "north",
+   "lat": 15.7047,
+   "lon": 100.1372,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.9,
+    "humidity": 56,
+    "rain_mm": 0.0,
+    "wind_kmh": 12.1,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 61,
+     "weather_th": "ฝนตกเล็กน้อย",
+     "weather_en": "Slight rain",
+     "temp_max": 31.9,
+     "temp_min": 23.5,
+     "rain_prob": 96,
+     "rain_mm": 2.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 29.3,
+     "temp_min": 22.7,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.2,
+     "temp_min": 21.8,
+     "rain_prob": 37,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.8,
+     "temp_min": 21.6,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 23.4,
+     "rain_prob": 4,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.1,
+     "temp_min": 23.8,
+     "rain_prob": 31,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.1,
+     "temp_min": 24.6,
+     "rain_prob": 22,
+     "rain_mm": 1.2
+    }
+   ]
+  },
+  {
+   "id": "UTI",
+   "name_th": "อุทัยธานี",
+   "name_en": "Uthai Thani",
+   "region": "north",
+   "lat": 15.3835,
+   "lon": 100.0246,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 30.8,
+    "humidity": 63,
+    "rain_mm": 0.0,
+    "wind_kmh": 12.9,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.9,
+     "temp_min": 22.9,
+     "rain_prob": 84,
+     "rain_mm": 14.7
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.6,
+     "temp_min": 22.9,
+     "rain_prob": 16,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.1,
+     "temp_min": 22.8,
+     "rain_prob": 22,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.0,
+     "temp_min": 21.4,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.9,
+     "temp_min": 23.4,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.8,
+     "temp_min": 23.8,
+     "rain_prob": 30,
+     "rain_mm": 1.2
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.9,
+     "temp_min": 24.1,
+     "rain_prob": 24,
+     "rain_mm": 3.0
+    }
+   ]
+  },
+  {
+   "id": "NMA",
+   "name_th": "นครราชสีมา",
+   "name_en": "Nakhon Ratchasima",
+   "region": "northeast",
+   "lat": 14.9799,
+   "lon": 102.0977,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 49,
+    "rain_mm": 0.0,
+    "wind_kmh": 19.3,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.6,
+     "temp_min": 23.4,
+     "rain_prob": 35,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 27.8,
+     "temp_min": 20.4,
+     "rain_prob": 7,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.5,
+     "temp_min": 20.6,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 30.9,
+     "temp_min": 22.1,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.9,
+     "temp_min": 22.4,
+     "rain_prob": 14,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.7,
+     "temp_min": 23.3,
+     "rain_prob": 51,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.4,
+     "temp_min": 23.6,
+     "rain_prob": 55,
+     "rain_mm": 1.2
+    }
+   ]
+  },
+  {
+   "id": "BRM",
+   "name_th": "บุรีรัมย์",
+   "name_en": "Buri Ram",
+   "region": "northeast",
+   "lat": 14.993,
+   "lon": 103.1029,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 55,
+    "rain_mm": 0.0,
+    "wind_kmh": 20.3,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.6,
+     "temp_min": 23.3,
+     "rain_prob": 31,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 27.5,
+     "temp_min": 21.2,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.2,
+     "temp_min": 20.5,
+     "rain_prob": 10,
+     "rain_mm": 0.4
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.9,
+     "temp_min": 21.4,
+     "rain_prob": 18,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.5,
+     "temp_min": 22.5,
+     "rain_prob": 25,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 31.4,
+     "temp_min": 22.9,
+     "rain_prob": 49,
+     "rain_mm": 3.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.2,
+     "temp_min": 23.2,
+     "rain_prob": 43,
+     "rain_mm": 1.2
+    }
+   ]
+  },
+  {
+   "id": "SRN",
+   "name_th": "สุรินทร์",
+   "name_en": "Surin",
+   "region": "northeast",
+   "lat": 14.8818,
+   "lon": 103.4936,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 55,
+    "rain_mm": 0.0,
+    "wind_kmh": 20.9,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.7,
+     "temp_min": 22.9,
+     "rain_prob": 12,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.2,
+     "temp_min": 20.9,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.8,
+     "temp_min": 20.3,
+     "rain_prob": 14,
+     "rain_mm": 0.7
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.5,
+     "temp_min": 21.6,
+     "rain_prob": 27,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.6,
+     "temp_min": 22.6,
+     "rain_prob": 30,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.0,
+     "temp_min": 23.2,
+     "rain_prob": 47,
+     "rain_mm": 1.5
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.1,
+     "temp_min": 23.3,
+     "rain_prob": 32,
+     "rain_mm": 1.2
+    }
+   ]
+  },
+  {
+   "id": "SSK",
+   "name_th": "ศรีสะเกษ",
+   "name_en": "Si Sa Ket",
+   "region": "northeast",
+   "lat": 15.1186,
+   "lon": 104.322,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.8,
+    "humidity": 52,
+    "rain_mm": 0.0,
+    "wind_kmh": 24.6,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.9,
+     "temp_min": 22.5,
+     "rain_prob": 20,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.4,
+     "temp_min": 20.2,
+     "rain_prob": 13,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.1,
+     "temp_min": 20.8,
+     "rain_prob": 16,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 31.1,
+     "temp_min": 21.9,
+     "rain_prob": 20,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 30.9,
+     "temp_min": 22.8,
+     "rain_prob": 33,
+     "rain_mm": 5.1
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.8,
+     "temp_min": 23.2,
+     "rain_prob": 61,
+     "rain_mm": 1.2
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.2,
+     "temp_min": 23.7,
+     "rain_prob": 49,
+     "rain_mm": 2.4
+    }
+   ]
+  },
+  {
+   "id": "UBN",
+   "name_th": "อุบลราชธานี",
+   "name_en": "Ubon Ratchathani",
+   "region": "northeast",
+   "lat": 15.2287,
+   "lon": 104.8564,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 32.5,
+    "humidity": 50,
+    "rain_mm": 0.0,
+    "wind_kmh": 22.0,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 32.6,
+     "temp_min": 22.7,
+     "rain_prob": 43,
+     "rain_mm": 1.6
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.6,
+     "temp_min": 20.6,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.4,
+     "temp_min": 21.3,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.7,
+     "temp_min": 22.0,
+     "rain_prob": 24,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 31.9,
+     "temp_min": 22.9,
+     "rain_prob": 33,
+     "rain_mm": 3.9
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 31.1,
+     "temp_min": 23.8,
+     "rain_prob": 51,
+     "rain_mm": 4.5
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.9,
+     "temp_min": 23.8,
+     "rain_prob": 31,
+     "rain_mm": 1.2
+    }
+   ]
+  },
+  {
+   "id": "YST",
+   "name_th": "ยโสธร",
+   "name_en": "Yasothon",
+   "region": "northeast",
+   "lat": 15.7944,
+   "lon": 104.1453,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.6,
+    "humidity": 53,
+    "rain_mm": 0.0,
+    "wind_kmh": 28.2,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.1,
+     "temp_min": 21.9,
+     "rain_prob": 69,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.8,
+     "temp_min": 21.1,
+     "rain_prob": 13,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.3,
+     "temp_min": 20.6,
+     "rain_prob": 25,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.9,
+     "temp_min": 22.0,
+     "rain_prob": 13,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.2,
+     "temp_min": 22.8,
+     "rain_prob": 24,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.6,
+     "temp_min": 23.0,
+     "rain_prob": 25,
+     "rain_mm": 3.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.1,
+     "temp_min": 23.6,
+     "rain_prob": 25,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "ACR",
+   "name_th": "อำนาจเจริญ",
+   "name_en": "Amnat Charoen",
+   "region": "northeast",
+   "lat": 15.8657,
+   "lon": 104.6258,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 31.1,
+    "humidity": 53,
+    "rain_mm": 0.1,
+    "wind_kmh": 30.3,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.4,
+     "temp_min": 20.6,
+     "rain_prob": 63,
+     "rain_mm": 0.4
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.6,
+     "temp_min": 19.6,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.4,
+     "temp_min": 20.1,
+     "rain_prob": 25,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 32.1,
+     "temp_min": 21.9,
+     "rain_prob": 12,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 32.1,
+     "temp_min": 22.7,
+     "rain_prob": 27,
+     "rain_mm": 5.1
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.7,
+     "temp_min": 22.7,
+     "rain_prob": 31,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 31.6,
+     "temp_min": 23.7,
+     "rain_prob": 20,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "CPM",
+   "name_th": "ชัยภูมิ",
+   "name_en": "Chaiyaphum",
+   "region": "northeast",
+   "lat": 15.8068,
+   "lon": 102.0316,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 30.7,
+    "humidity": 54,
+    "rain_mm": 0.1,
+    "wind_kmh": 24.3,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.8,
+     "temp_min": 22.0,
+     "rain_prob": 73,
+     "rain_mm": 1.7
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 27.1,
+     "temp_min": 20.4,
+     "rain_prob": 3,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 26.6,
+     "temp_min": 20.0,
+     "rain_prob": 6,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.8,
+     "temp_min": 21.4,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.4,
+     "temp_min": 21.8,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 22.5,
+     "rain_prob": 19,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.9,
+     "temp_min": 22.9,
+     "rain_prob": 43,
+     "rain_mm": 1.4
+    }
+   ]
+  },
+  {
+   "id": "KKN",
+   "name_th": "ขอนแก่น",
+   "name_en": "Khon Kaen",
+   "region": "northeast",
+   "lat": 16.4419,
+   "lon": 102.836,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 30.4,
+    "humidity": 56,
+    "rain_mm": 0.0,
+    "wind_kmh": 23.0,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 31.4,
+     "temp_min": 20.9,
+     "rain_prob": 82,
+     "rain_mm": 2.4
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.7,
+     "temp_min": 19.6,
+     "rain_prob": 11,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 25.3,
+     "temp_min": 18.0,
+     "rain_prob": 28,
+     "rain_mm": 2.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 29.5,
+     "temp_min": 20.1,
+     "rain_prob": 16,
+     "rain_mm": 1.4
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 28.6,
+     "temp_min": 21.3,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.3,
+     "temp_min": 22.2,
+     "rain_prob": 24,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.0,
+     "temp_min": 23.5,
+     "rain_prob": 18,
+     "rain_mm": 1.2
+    }
+   ]
+  },
+  {
+   "id": "UDN",
+   "name_th": "อุดรธานี",
+   "name_en": "Udon Thani",
+   "region": "northeast",
+   "lat": 17.4138,
+   "lon": 102.787,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 28.8,
+    "humidity": 64,
+    "rain_mm": 0.1,
+    "wind_kmh": 21.1,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.9,
+     "temp_min": 21.5,
+     "rain_prob": 40,
+     "rain_mm": 0.4
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.7,
+     "temp_min": 19.7,
+     "rain_prob": 0,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 25.8,
+     "temp_min": 18.9,
+     "rain_prob": 15,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 26.0,
+     "temp_min": 20.1,
+     "rain_prob": 10,
+     "rain_mm": 3.4
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.5,
+     "temp_min": 20.2,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.9,
+     "temp_min": 21.7,
+     "rain_prob": 14,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 0,
+     "weather_th": "ท้องฟ้าแจ่มใส",
+     "weather_en": "Clear sky",
+     "temp_max": 31.4,
+     "temp_min": 22.7,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "LEI",
+   "name_th": "เลย",
+   "name_en": "Loei",
+   "region": "northeast",
+   "lat": 17.486,
+   "lon": 101.7223,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 27.8,
+    "humidity": 71,
+    "rain_mm": 0.1,
+    "wind_kmh": 15.1,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.6,
+     "temp_min": 20.7,
+     "rain_prob": 91,
+     "rain_mm": 7.7
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.2,
+     "temp_min": 18.8,
+     "rain_prob": 3,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 24.5,
+     "temp_min": 18.3,
+     "rain_prob": 22,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.2,
+     "temp_min": 18.4,
+     "rain_prob": 12,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.8,
+     "temp_min": 19.1,
+     "rain_prob": 4,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.9,
+     "temp_min": 20.4,
+     "rain_prob": 25,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.0,
+     "temp_min": 21.7,
+     "rain_prob": 22,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "NKI",
+   "name_th": "หนองคาย",
+   "name_en": "Nong Khai",
+   "region": "northeast",
+   "lat": 17.8783,
+   "lon": 102.7413,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 29.3,
+    "humidity": 46,
+    "rain_mm": 0.0,
+    "wind_kmh": 34.9,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.6,
+     "temp_min": 22.5,
+     "rain_prob": 25,
+     "rain_mm": 0.2
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 27.7,
+     "temp_min": 20.4,
+     "rain_prob": 2,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 26.8,
+     "temp_min": 18.7,
+     "rain_prob": 25,
+     "rain_mm": 2.4
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 24.2,
+     "temp_min": 20.0,
+     "rain_prob": 14,
+     "rain_mm": 0.8
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.1,
+     "temp_min": 21.1,
+     "rain_prob": 4,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 31.0,
+     "temp_min": 22.0,
+     "rain_prob": 12,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.4,
+     "temp_min": 23.1,
+     "rain_prob": 8,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "NBP",
+   "name_th": "หนองบัวลำภู",
+   "name_en": "Nong Bua Lam Phu",
+   "region": "northeast",
+   "lat": 17.2045,
+   "lon": 102.4407,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 27.8,
+    "humidity": 68,
+    "rain_mm": 0.1,
+    "wind_kmh": 18.5,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.1,
+     "temp_min": 20.7,
+     "rain_prob": 57,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 25.7,
+     "temp_min": 19.9,
+     "rain_prob": 5,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 25.1,
+     "temp_min": 18.0,
+     "rain_prob": 25,
+     "rain_mm": 2.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 25.2,
+     "temp_min": 19.5,
+     "rain_prob": 14,
+     "rain_mm": 9.3
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.8,
+     "temp_min": 19.5,
+     "rain_prob": 4,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.2,
+     "temp_min": 21.2,
+     "rain_prob": 17,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.9,
+     "temp_min": 22.4,
+     "rain_prob": 15,
+     "rain_mm": 1.2
+    }
+   ]
+  },
+  {
+   "id": "BKN",
+   "name_th": "บึงกาฬ",
+   "name_en": "Bueng Kan",
+   "region": "northeast",
+   "lat": 18.3609,
+   "lon": 103.6466,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 27.1,
+    "humidity": 50,
+    "rain_mm": 0.0,
+    "wind_kmh": 29.2,
+    "weather_code": 0,
+    "weather_th": "ท้องฟ้าแจ่มใส",
+    "weather_en": "Clear sky"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 29.5,
+     "temp_min": 21.9,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 27.1,
+     "temp_min": 19.7,
+     "rain_prob": 0,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.6,
+     "temp_min": 18.3,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 22.1,
+     "temp_min": 20.3,
+     "rain_prob": 6,
+     "rain_mm": 11.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.1,
+     "temp_min": 19.8,
+     "rain_prob": 4,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 0,
+     "weather_th": "ท้องฟ้าแจ่มใส",
+     "weather_en": "Clear sky",
+     "temp_max": 30.6,
+     "temp_min": 21.0,
+     "rain_prob": 7,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 1,
+     "weather_th": "มีเมฆเล็กน้อย",
+     "weather_en": "Mainly clear",
+     "temp_max": 30.9,
+     "temp_min": 22.4,
+     "rain_prob": 14,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "SNK",
+   "name_th": "สกลนคร",
+   "name_en": "Sakon Nakhon",
+   "region": "northeast",
+   "lat": 17.1546,
+   "lon": 104.1348,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 28.2,
+    "humidity": 56,
+    "rain_mm": 0.1,
+    "wind_kmh": 24.3,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.9,
+     "temp_min": 20.2,
+     "rain_prob": 57,
+     "rain_mm": 1.4
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.1,
+     "temp_min": 18.4,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.7,
+     "temp_min": 18.5,
+     "rain_prob": 11,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.4,
+     "temp_min": 20.0,
+     "rain_prob": 6,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 30.5,
+     "temp_min": 20.9,
+     "rain_prob": 10,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 31.3,
+     "temp_min": 22.7,
+     "rain_prob": 12,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.7,
+     "temp_min": 23.5,
+     "rain_prob": 12,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "NPM",
+   "name_th": "นครพนม",
+   "name_en": "Nakhon Phanom",
+   "region": "northeast",
+   "lat": 17.392,
+   "lon": 104.7695,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 28.8,
+    "humidity": 53,
+    "rain_mm": 0.0,
+    "wind_kmh": 21.4,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.9,
+     "temp_min": 19.3,
+     "rain_prob": 45,
+     "rain_mm": 0.8
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 26.0,
+     "temp_min": 18.0,
+     "rain_prob": 14,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 29.4,
+     "temp_min": 18.1,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 31.0,
+     "temp_min": 20.3,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.1,
+     "temp_min": 20.9,
+     "rain_prob": 25,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.2,
+     "temp_min": 22.1,
+     "rain_prob": 16,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 2,
+     "weather_th": "มีเมฆบางส่วน",
+     "weather_en": "Partly cloudy",
+     "temp_max": 31.7,
+     "temp_min": 23.1,
+     "rain_prob": 8,
+     "rain_mm": 0.0
+    }
+   ]
+  },
+  {
+   "id": "MDH",
+   "name_th": "มุกดาหาร",
+   "name_en": "Mukdahan",
+   "region": "northeast",
+   "lat": 16.5453,
+   "lon": 104.7235,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 30.4,
+    "humidity": 54,
+    "rain_mm": 0.0,
+    "wind_kmh": 28.6,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.6,
+     "temp_min": 21.4,
+     "rain_prob": 76,
+     "rain_mm": 0.7
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 25.8,
+     "temp_min": 20.4,
+     "rain_prob": 11,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.7,
+     "temp_min": 20.1,
+     "rain_prob": 21,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.7,
+     "temp_min": 21.2,
+     "rain_prob": 3,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 21.8,
+     "rain_prob": 25,
+     "rain_mm": 1.2
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.4,
+     "temp_min": 22.0,
+     "rain_prob": 24,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.6,
+     "temp_min": 23.3,
+     "rain_prob": 13,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "KSN",
+   "name_th": "กาฬสินธุ์",
+   "name_en": "Kalasin",
+   "region": "northeast",
+   "lat": 16.4322,
+   "lon": 103.5061,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 32.3,
+    "humidity": 49,
+    "rain_mm": 0.0,
+    "wind_kmh": 26.9,
+    "weather_code": 1,
+    "weather_th": "มีเมฆเล็กน้อย",
+    "weather_en": "Mainly clear"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 32.3,
+     "temp_min": 21.3,
+     "rain_prob": 80,
+     "rain_mm": 0.4
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.5,
+     "temp_min": 19.4,
+     "rain_prob": 11,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 25.8,
+     "temp_min": 19.2,
+     "rain_prob": 29,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 30.4,
+     "temp_min": 20.2,
+     "rain_prob": 10,
+     "rain_mm": 2.2
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 29.5,
+     "temp_min": 21.5,
+     "rain_prob": 25,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.9,
+     "temp_min": 22.6,
+     "rain_prob": 28,
+     "rain_mm": 0.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.8,
+     "temp_min": 23.1,
+     "rain_prob": 14,
+     "rain_mm": 0.6
+    }
+   ]
+  },
+  {
+   "id": "MKM",
+   "name_th": "มหาสารคาม",
+   "name_en": "Maha Sarakham",
+   "region": "northeast",
+   "lat": 16.1851,
+   "lon": 103.3027,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 29.3,
+    "humidity": 64,
+    "rain_mm": 0.5,
+    "wind_kmh": 24.6,
+    "weather_code": 80,
+    "weather_th": "ฝนซู่เล็กน้อย",
+    "weather_en": "Slight rain showers"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 31.6,
+     "temp_min": 21.4,
+     "rain_prob": 88,
+     "rain_mm": 3.1
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.2,
+     "temp_min": 19.6,
+     "rain_prob": 11,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 26.4,
+     "temp_min": 19.8,
+     "rain_prob": 33,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 29.8,
+     "temp_min": 20.2,
+     "rain_prob": 14,
+     "rain_mm": 1.9
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 28.5,
+     "temp_min": 21.5,
+     "rain_prob": 18,
+     "rain_mm": 3.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 22.7,
+     "rain_prob": 24,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 23.7,
+     "rain_prob": 18,
+     "rain_mm": 3.0
+    }
+   ]
+  },
+  {
+   "id": "RET",
+   "name_th": "ร้อยเอ็ด",
+   "name_en": "Roi Et",
+   "region": "northeast",
+   "lat": 16.0538,
+   "lon": 103.652,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 30.9,
+    "humidity": 56,
+    "rain_mm": 0.1,
+    "wind_kmh": 25.8,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.5,
+     "temp_min": 21.8,
+     "rain_prob": 71,
+     "rain_mm": 0.8
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 3,
+     "weather_th": "มีเมฆมาก",
+     "weather_en": "Overcast",
+     "temp_max": 27.4,
+     "temp_min": 19.8,
+     "rain_prob": 12,
+     "rain_mm": 0.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 26.5,
+     "temp_min": 19.2,
+     "rain_prob": 21,
+     "rain_mm": 0.1
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 30.3,
+     "temp_min": 20.6,
+     "rain_prob": 16,
+     "rain_mm": 2.4
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 28.5,
+     "temp_min": 21.9,
+     "rain_prob": 24,
+     "rain_mm": 0.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 31.6,
+     "temp_min": 22.7,
+     "rain_prob": 28,
+     "rain_mm": 0.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.9,
+     "temp_min": 23.4,
+     "rain_prob": 17,
+     "rain_mm": 1.2
+    }
+   ]
+  },
+  {
+   "id": "CPN",
+   "name_th": "ชุมพร",
+   "name_en": "Chumphon",
+   "region": "south",
+   "lat": 10.493,
+   "lon": 99.18,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 29.5,
+    "humidity": 74,
+    "rain_mm": 0.0,
+    "wind_kmh": 16.4,
+    "weather_code": 2,
+    "weather_th": "มีเมฆบางส่วน",
+    "weather_en": "Partly cloudy"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.7,
+     "temp_min": 23.9,
+     "rain_prob": 100,
+     "rain_mm": 5.6
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 27.5,
+     "temp_min": 23.9,
+     "rain_prob": 100,
+     "rain_mm": 20.8
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 27.3,
+     "temp_min": 23.7,
+     "rain_prob": 86,
+     "rain_mm": 27.3
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 26.5,
+     "temp_min": 24.1,
+     "rain_prob": 92,
+     "rain_mm": 36.1
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 26.3,
+     "temp_min": 24.1,
+     "rain_prob": 96,
+     "rain_mm": 34.1
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 28.9,
+     "temp_min": 23.6,
+     "rain_prob": 100,
+     "rain_mm": 7.5
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.8,
+     "temp_min": 23.4,
+     "rain_prob": 96,
+     "rain_mm": 1.8
+    }
+   ]
+  },
+  {
+   "id": "RNG",
+   "name_th": "ระนอง",
+   "name_en": "Ranong",
+   "region": "south",
+   "lat": 9.9529,
+   "lon": 98.6085,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 29.6,
+    "humidity": 74,
+    "rain_mm": 0.0,
+    "wind_kmh": 14.0,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.8,
+     "temp_min": 25.3,
+     "rain_prob": 100,
+     "rain_mm": 1.0
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 28.7,
+     "temp_min": 24.9,
+     "rain_prob": 100,
+     "rain_mm": 4.0
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 28.5,
+     "temp_min": 24.5,
+     "rain_prob": 100,
+     "rain_mm": 3.1
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 28.1,
+     "temp_min": 24.6,
+     "rain_prob": 95,
+     "rain_mm": 12.4
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 27.5,
+     "temp_min": 24.9,
+     "rain_prob": 98,
+     "rain_mm": 32.7
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.6,
+     "temp_min": 24.6,
+     "rain_prob": 97,
+     "rain_mm": 12.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 29.4,
+     "temp_min": 24.8,
+     "rain_prob": 83,
+     "rain_mm": 10.6
+    }
+   ]
+  },
+  {
+   "id": "SNI",
+   "name_th": "สุราษฎร์ธานี",
+   "name_en": "Surat Thani",
+   "region": "south",
+   "lat": 9.1382,
+   "lon": 99.3215,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 27.2,
+    "humidity": 87,
+    "rain_mm": 0.4,
+    "wind_kmh": 20.2,
+    "weather_code": 95,
+    "weather_th": "พายุฝนฟ้าคะนอง",
+    "weather_en": "Thunderstorm"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 29.2,
+     "temp_min": 23.5,
+     "rain_prob": 89,
+     "rain_mm": 6.9
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 29.6,
+     "temp_min": 23.4,
+     "rain_prob": 99,
+     "rain_mm": 9.7
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 28.6,
+     "temp_min": 22.3,
+     "rain_prob": 100,
+     "rain_mm": 8.8
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 28.4,
+     "temp_min": 23.0,
+     "rain_prob": 100,
+     "rain_mm": 14.2
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 29.0,
+     "temp_min": 22.9,
+     "rain_prob": 90,
+     "rain_mm": 20.6
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.2,
+     "temp_min": 23.1,
+     "rain_prob": 78,
+     "rain_mm": 3.5
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.1,
+     "temp_min": 23.9,
+     "rain_prob": 72,
+     "rain_mm": 5.2
+    }
+   ]
+  },
+  {
+   "id": "PNA",
+   "name_th": "พังงา",
+   "name_en": "Phangnga",
+   "region": "south",
+   "lat": 8.4501,
+   "lon": 98.5255,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 29.8,
+    "humidity": 71,
+    "rain_mm": 0.0,
+    "wind_kmh": 15.2,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.9,
+     "temp_min": 23.7,
+     "rain_prob": 89,
+     "rain_mm": 3.3
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 29.2,
+     "temp_min": 23.0,
+     "rain_prob": 98,
+     "rain_mm": 7.3
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 28.4,
+     "temp_min": 22.9,
+     "rain_prob": 96,
+     "rain_mm": 2.2
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 29.9,
+     "temp_min": 23.1,
+     "rain_prob": 100,
+     "rain_mm": 18.3
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.1,
+     "temp_min": 23.0,
+     "rain_prob": 97,
+     "rain_mm": 11.7
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 30.7,
+     "temp_min": 22.7,
+     "rain_prob": 92,
+     "rain_mm": 8.2
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 31.6,
+     "temp_min": 23.4,
+     "rain_prob": 91,
+     "rain_mm": 12.2
+    }
+   ]
+  },
+  {
+   "id": "PKT",
+   "name_th": "ภูเก็ต",
+   "name_en": "Phuket",
+   "region": "south",
+   "lat": 7.8804,
+   "lon": 98.3923,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 28.8,
+    "humidity": 74,
+    "rain_mm": 0.0,
+    "wind_kmh": 26.9,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.1,
+     "temp_min": 24.8,
+     "rain_prob": 94,
+     "rain_mm": 5.2
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 29.0,
+     "temp_min": 24.5,
+     "rain_prob": 95,
+     "rain_mm": 22.7
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.0,
+     "temp_min": 24.3,
+     "rain_prob": 84,
+     "rain_mm": 7.9
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 29.2,
+     "temp_min": 24.1,
+     "rain_prob": 88,
+     "rain_mm": 12.8
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 29.1,
+     "temp_min": 24.2,
+     "rain_prob": 79,
+     "rain_mm": 14.9
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.5,
+     "temp_min": 24.3,
+     "rain_prob": 73,
+     "rain_mm": 3.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 30.8,
+     "temp_min": 24.9,
+     "rain_prob": 66,
+     "rain_mm": 4.6
+    }
+   ]
+  },
+  {
+   "id": "KBI",
+   "name_th": "กระบี่",
+   "name_en": "Krabi",
+   "region": "south",
+   "lat": 8.0863,
+   "lon": 98.9063,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 28.5,
+    "humidity": 76,
+    "rain_mm": 0.0,
+    "wind_kmh": 20.1,
+    "weather_code": 3,
+    "weather_th": "มีเมฆมาก",
+    "weather_en": "Overcast"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.6,
+     "temp_min": 23.7,
+     "rain_prob": 100,
+     "rain_mm": 5.2
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 30.5,
+     "temp_min": 23.4,
+     "rain_prob": 98,
+     "rain_mm": 5.7
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 30.3,
+     "temp_min": 23.7,
+     "rain_prob": 92,
+     "rain_mm": 5.6
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 30.4,
+     "temp_min": 23.6,
+     "rain_prob": 99,
+     "rain_mm": 9.5
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.0,
+     "temp_min": 23.2,
+     "rain_prob": 94,
+     "rain_mm": 24.7
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 31.3,
+     "temp_min": 23.1,
+     "rain_prob": 83,
+     "rain_mm": 9.7
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 31.3,
+     "temp_min": 23.3,
+     "rain_prob": 90,
+     "rain_mm": 17.2
+    }
+   ]
+  },
+  {
+   "id": "NRT",
+   "name_th": "นครศรีธรรมราช",
+   "name_en": "Nakhon Si Thammarat",
+   "region": "south",
+   "lat": 8.4304,
+   "lon": 99.9631,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 27.3,
+    "humidity": 90,
+    "rain_mm": 0.3,
+    "wind_kmh": 5.9,
+    "weather_code": 55,
+    "weather_th": "ฝนละอองหนาแน่น",
+    "weather_en": "Dense drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 28.4,
+     "temp_min": 23.1,
+     "rain_prob": 100,
+     "rain_mm": 33.5
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 28.7,
+     "temp_min": 22.6,
+     "rain_prob": 96,
+     "rain_mm": 31.8
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 82,
+     "weather_th": "ฝนซู่หนักมาก",
+     "weather_en": "Violent rain showers",
+     "temp_max": 27.6,
+     "temp_min": 22.5,
+     "rain_prob": 100,
+     "rain_mm": 33.6
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 29.1,
+     "temp_min": 23.1,
+     "rain_prob": 98,
+     "rain_mm": 45.1
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 29.8,
+     "temp_min": 23.8,
+     "rain_prob": 92,
+     "rain_mm": 20.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 30.5,
+     "temp_min": 23.5,
+     "rain_prob": 83,
+     "rain_mm": 7.4
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 31.0,
+     "temp_min": 23.7,
+     "rain_prob": 77,
+     "rain_mm": 9.6
+    }
+   ]
+  },
+  {
+   "id": "TRG",
+   "name_th": "ตรัง",
+   "name_en": "Trang",
+   "region": "south",
+   "lat": 7.5563,
+   "lon": 99.6114,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 25.9,
+    "humidity": 91,
+    "rain_mm": 0.2,
+    "wind_kmh": 15.2,
+    "weather_code": 53,
+    "weather_th": "ฝนละออง",
+    "weather_en": "Moderate drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 26.9,
+     "temp_min": 24.3,
+     "rain_prob": 100,
+     "rain_mm": 20.3
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 29.0,
+     "temp_min": 23.6,
+     "rain_prob": 100,
+     "rain_mm": 4.1
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.4,
+     "temp_min": 23.4,
+     "rain_prob": 85,
+     "rain_mm": 1.4
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.0,
+     "temp_min": 24.2,
+     "rain_prob": 96,
+     "rain_mm": 11.2
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.5,
+     "temp_min": 23.5,
+     "rain_prob": 98,
+     "rain_mm": 26.2
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 31.1,
+     "temp_min": 23.4,
+     "rain_prob": 92,
+     "rain_mm": 2.6
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 31.4,
+     "temp_min": 23.4,
+     "rain_prob": 92,
+     "rain_mm": 10.2
+    }
+   ]
+  },
+  {
+   "id": "PLG",
+   "name_th": "พัทลุง",
+   "name_en": "Phatthalung",
+   "region": "south",
+   "lat": 7.6167,
+   "lon": 100.074,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 26.9,
+    "humidity": 86,
+    "rain_mm": 0.2,
+    "wind_kmh": 15.2,
+    "weather_code": 53,
+    "weather_th": "ฝนละออง",
+    "weather_en": "Moderate drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 27.1,
+     "temp_min": 24.5,
+     "rain_prob": 100,
+     "rain_mm": 56.4
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 27.8,
+     "temp_min": 23.9,
+     "rain_prob": 99,
+     "rain_mm": 33.2
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 27.8,
+     "temp_min": 23.0,
+     "rain_prob": 99,
+     "rain_mm": 23.4
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 28.3,
+     "temp_min": 23.8,
+     "rain_prob": 100,
+     "rain_mm": 16.6
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.5,
+     "temp_min": 23.7,
+     "rain_prob": 100,
+     "rain_mm": 12.4
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 28.8,
+     "temp_min": 23.3,
+     "rain_prob": 98,
+     "rain_mm": 3.7
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.6,
+     "temp_min": 23.8,
+     "rain_prob": 94,
+     "rain_mm": 6.0
+    }
+   ]
+  },
+  {
+   "id": "STN",
+   "name_th": "สตูล",
+   "name_en": "Satun",
+   "region": "south",
+   "lat": 6.6238,
+   "lon": 100.0674,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 25.8,
+    "humidity": 93,
+    "rain_mm": 0.3,
+    "wind_kmh": 14.7,
+    "weather_code": 55,
+    "weather_th": "ฝนละอองหนาแน่น",
+    "weather_en": "Dense drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 27.3,
+     "temp_min": 23.5,
+     "rain_prob": 100,
+     "rain_mm": 10.9
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 30.5,
+     "temp_min": 23.2,
+     "rain_prob": 98,
+     "rain_mm": 6.5
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.8,
+     "temp_min": 22.6,
+     "rain_prob": 98,
+     "rain_mm": 11.5
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.6,
+     "temp_min": 23.2,
+     "rain_prob": 99,
+     "rain_mm": 28.9
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.6,
+     "temp_min": 23.1,
+     "rain_prob": 98,
+     "rain_mm": 20.0
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 30.4,
+     "temp_min": 22.8,
+     "rain_prob": 96,
+     "rain_mm": 5.3
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 30.4,
+     "temp_min": 23.3,
+     "rain_prob": 98,
+     "rain_mm": 7.4
+    }
+   ]
+  },
+  {
+   "id": "SKA",
+   "name_th": "สงขลา",
+   "name_en": "Songkhla",
+   "region": "south",
+   "lat": 7.1898,
+   "lon": 100.5951,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 26.4,
+    "humidity": 93,
+    "rain_mm": 0.3,
+    "wind_kmh": 22.1,
+    "weather_code": 55,
+    "weather_th": "ฝนละอองหนาแน่น",
+    "weather_en": "Dense drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 27.5,
+     "temp_min": 24.9,
+     "rain_prob": 100,
+     "rain_mm": 48.7
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 28.0,
+     "temp_min": 24.2,
+     "rain_prob": 100,
+     "rain_mm": 29.7
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 28.3,
+     "temp_min": 24.1,
+     "rain_prob": 100,
+     "rain_mm": 13.1
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 28.8,
+     "temp_min": 24.4,
+     "rain_prob": 95,
+     "rain_mm": 8.2
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 28.8,
+     "temp_min": 23.9,
+     "rain_prob": 85,
+     "rain_mm": 12.4
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.0,
+     "temp_min": 23.4,
+     "rain_prob": 77,
+     "rain_mm": 1.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.4,
+     "temp_min": 24.7,
+     "rain_prob": 77,
+     "rain_mm": 1.2
+    }
+   ]
+  },
+  {
+   "id": "PTN",
+   "name_th": "ปัตตานี",
+   "name_en": "Pattani",
+   "region": "south",
+   "lat": 6.8696,
+   "lon": 101.2501,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 27.4,
+    "humidity": 85,
+    "rain_mm": 0.1,
+    "wind_kmh": 17.8,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 27.8,
+     "temp_min": 23.7,
+     "rain_prob": 100,
+     "rain_mm": 28.5
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 29.3,
+     "temp_min": 23.1,
+     "rain_prob": 100,
+     "rain_mm": 15.5
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 28.5,
+     "temp_min": 22.9,
+     "rain_prob": 100,
+     "rain_mm": 10.3
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 29.3,
+     "temp_min": 23.7,
+     "rain_prob": 96,
+     "rain_mm": 14.8
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 30.0,
+     "temp_min": 23.3,
+     "rain_prob": 99,
+     "rain_mm": 21.3
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.2,
+     "temp_min": 23.8,
+     "rain_prob": 98,
+     "rain_mm": 5.0
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 53,
+     "weather_th": "ฝนละออง",
+     "weather_en": "Moderate drizzle",
+     "temp_max": 29.4,
+     "temp_min": 24.0,
+     "rain_prob": 93,
+     "rain_mm": 4.8
+    }
+   ]
+  },
+  {
+   "id": "YLA",
+   "name_th": "ยะลา",
+   "name_en": "Yala",
+   "region": "south",
+   "lat": 6.5411,
+   "lon": 101.2804,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 25.3,
+    "humidity": 95,
+    "rain_mm": 0.2,
+    "wind_kmh": 9.3,
+    "weather_code": 53,
+    "weather_th": "ฝนละออง",
+    "weather_en": "Moderate drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 26.8,
+     "temp_min": 23.6,
+     "rain_prob": 100,
+     "rain_mm": 34.3
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 28.5,
+     "temp_min": 22.9,
+     "rain_prob": 99,
+     "rain_mm": 15.7
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 28.3,
+     "temp_min": 22.5,
+     "rain_prob": 98,
+     "rain_mm": 8.7
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.4,
+     "temp_min": 22.9,
+     "rain_prob": 97,
+     "rain_mm": 7.3
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 30.7,
+     "temp_min": 23.1,
+     "rain_prob": 97,
+     "rain_mm": 29.5
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 30.0,
+     "temp_min": 23.2,
+     "rain_prob": 97,
+     "rain_mm": 9.5
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 29.9,
+     "temp_min": 23.5,
+     "rain_prob": 94,
+     "rain_mm": 4.2
+    }
+   ]
+  },
+  {
+   "id": "NWT",
+   "name_th": "นราธิวาส",
+   "name_en": "Narathiwat",
+   "region": "south",
+   "lat": 6.4255,
+   "lon": 101.8253,
+   "current": {
+    "time": "2026-11-09T14:00",
+    "temp": 27.8,
+    "humidity": 81,
+    "rain_mm": 0.1,
+    "wind_kmh": 12.1,
+    "weather_code": 51,
+    "weather_th": "ฝนละอองเล็กน้อย",
+    "weather_en": "Light drizzle"
+   },
+   "daily": [
+    {
+     "date": "2026-11-09",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 27.8,
+     "temp_min": 24.2,
+     "rain_prob": 100,
+     "rain_mm": 43.6
+    },
+    {
+     "date": "2026-11-10",
+     "weather_code": 95,
+     "weather_th": "พายุฝนฟ้าคะนอง",
+     "weather_en": "Thunderstorm",
+     "temp_max": 29.4,
+     "temp_min": 23.2,
+     "rain_prob": 98,
+     "rain_mm": 17.4
+    },
+    {
+     "date": "2026-11-11",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.1,
+     "temp_min": 22.7,
+     "rain_prob": 87,
+     "rain_mm": 8.0
+    },
+    {
+     "date": "2026-11-12",
+     "weather_code": 55,
+     "weather_th": "ฝนละอองหนาแน่น",
+     "weather_en": "Dense drizzle",
+     "temp_max": 29.4,
+     "temp_min": 24.2,
+     "rain_prob": 88,
+     "rain_mm": 6.0
+    },
+    {
+     "date": "2026-11-13",
+     "weather_code": 80,
+     "weather_th": "ฝนซู่เล็กน้อย",
+     "weather_en": "Slight rain showers",
+     "temp_max": 29.9,
+     "temp_min": 23.5,
+     "rain_prob": 100,
+     "rain_mm": 11.5
+    },
+    {
+     "date": "2026-11-14",
+     "weather_code": 81,
+     "weather_th": "ฝนซู่ปานกลาง",
+     "weather_en": "Moderate rain showers",
+     "temp_max": 29.6,
+     "temp_min": 23.3,
+     "rain_prob": 90,
+     "rain_mm": 9.9
+    },
+    {
+     "date": "2026-11-15",
+     "weather_code": 51,
+     "weather_th": "ฝนละอองเล็กน้อย",
+     "weather_en": "Light drizzle",
+     "temp_max": 30.3,
+     "temp_min": 23.8,
+     "rain_prob": 82,
+     "rain_mm": 3.4
+    }
+   ]
+  }
+ ]
+}
