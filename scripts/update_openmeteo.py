@@ -1,8 +1,8 @@
-"""ดึงสภาพอากาศปัจจุบัน + พยากรณ์ 7 วัน ของ 77 จังหวัดจาก Open-Meteo
+"""ดึงสภาพอากาศปัจจุบัน + พยากรณ์ 10 วัน ของ 77 จังหวัดจาก Open-Meteo
 
 ใช้แค่ Python standard library (ไม่ต้อง pip install อะไร)
 ผลลัพธ์:
-  provinces_weather.json     ข้อมูลเต็ม (ปัจจุบัน + รายวัน 7 วัน) สำหรับหน้าเว็บ
+  provinces_weather.json     ข้อมูลเต็ม (ปัจจุบัน + รายวัน 10 วัน) สำหรับหน้าเว็บ
   provinces_weather.geojson  จุดจังหวัด + ค่าปัจจุบัน/วันนี้ สำหรับโปรแกรม GIS
 
 รันเอง:  python scripts/update_openmeteo.py
@@ -22,11 +22,13 @@ OUT_JSON = ROOT / "provinces_weather.json"
 OUT_GEOJSON = ROOT / "provinces_weather.geojson"
 
 API_URL = "https://api.open-meteo.com/v1/forecast"
-# จำกัดไว้ไม่เกิน 10 ตัวแปร: Open-Meteo นับคำขอที่เกิน 10 ตัวแปรเป็นหลายครั้ง
-CURRENT_VARS = ["temperature_2m", "relative_humidity_2m", "precipitation", "weather_code", "wind_speed_10m"]
+# Open-Meteo นับคำขอที่เกิน 10 ตัวแปรเป็น (จำนวนตัวแปร / 10) calls ต่อพิกัด
+# 17 ตัวแปร ≈ 1.7 calls x 77 จุด x 24 ครั้ง ≈ 3,150 calls/วัน (โควตาฟรี 10,000/วัน)
+CURRENT_VARS = ["temperature_2m", "apparent_temperature", "relative_humidity_2m", "precipitation",
+                "weather_code", "wind_speed_10m", "wind_direction_10m", "visibility", "is_day"]
 DAILY_VARS = ["weather_code", "temperature_2m_max", "temperature_2m_min",
-              "precipitation_probability_max", "precipitation_sum"]
-FORECAST_DAYS = 7
+              "precipitation_probability_max", "precipitation_sum", "uv_index_max", "sunrise", "sunset"]
+FORECAST_DAYS = 10
 TZ_NAME = "Asia/Bangkok"
 BKK = timezone(timedelta(hours=7))
 
@@ -122,15 +124,22 @@ def build(provinces, results, fetched_at):
                 "temp_min": d["temperature_2m_min"][i],
                 "rain_prob": d["precipitation_probability_max"][i],
                 "rain_mm": d["precipitation_sum"][i],
+                "uv_max": d["uv_index_max"][i],
+                "sunrise": d["sunrise"][i],
+                "sunset": d["sunset"][i],
             })
         out.append({
             **p,
             "current": {
                 "time": cur.get("time"),
                 "temp": cur.get("temperature_2m"),
+                "feels_like": cur.get("apparent_temperature"),
                 "humidity": cur.get("relative_humidity_2m"),
                 "rain_mm": cur.get("precipitation"),
                 "wind_kmh": cur.get("wind_speed_10m"),
+                "wind_dir": cur.get("wind_direction_10m"),
+                "visibility_m": cur.get("visibility"),
+                "is_day": cur.get("is_day"),
                 "weather_code": cur.get("weather_code"),
                 "weather_th": cur_th,
                 "weather_en": cur_en,
@@ -144,7 +153,8 @@ def build(provinces, results, fetched_at):
         "source": "Open-Meteo.com",
         "attribution": "Weather data by Open-Meteo.com (CC BY 4.0)",
         "attribution_url": "https://open-meteo.com/",
-        "units": {"temp": "°C", "humidity": "%", "rain_mm": "mm", "wind_kmh": "km/h", "rain_prob": "%"},
+        "units": {"temp": "°C", "humidity": "%", "rain_mm": "mm", "wind_kmh": "km/h", "wind_dir": "°",
+                  "visibility_m": "m", "rain_prob": "%"},
         "count": len(out),
     }
     full = {**meta, "provinces": out}
@@ -162,6 +172,7 @@ def build(provinces, results, fetched_at):
                 "region": p["region"],
                 "obs_time": p["current"]["time"],
                 "temp": p["current"]["temp"],
+                "feels_like": p["current"]["feels_like"],
                 "humidity": p["current"]["humidity"],
                 "rain_mm": p["current"]["rain_mm"],
                 "wind_kmh": p["current"]["wind_kmh"],
@@ -171,6 +182,7 @@ def build(provinces, results, fetched_at):
                 "today_min": today.get("temp_min"),
                 "today_rain_prob": today.get("rain_prob"),
                 "today_rain_mm": today.get("rain_mm"),
+                "today_uv_max": today.get("uv_max"),
                 "updated_at": meta["updated_at"],
             },
         })
