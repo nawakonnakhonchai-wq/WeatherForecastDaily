@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>สภาพอากาศ 77 จังหวัด</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  :root {
+    --bg: #f4f6f9; --panel: #ffffff; --text: #17212b; --muted: #5f6b7a; --line: #e2e7ee;
+    --accent: #0b5ed7; --accent-soft: #e7f0ff; --row-hover: #f3f7fd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f141a; --panel: #18202a; --text: #e8edf3; --muted: #9aa7b6; --line: #2a3542;
+      --accent: #6ea8ff; --accent-soft: #1d2d45; --row-hover: #1f2a37; }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--bg); color: var(--text); font-family: Inter, Sarabun, system-ui, sans-serif; font-size: 15px; }
+  header { padding: 14px 16px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; justify-content: space-between; }
+  h1 { font-size: 20px; margin: 0; }
+  .updated { color: var(--muted); font-size: 13px; }
+  .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; padding: 0 16px 12px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; }
+  .stat .k { color: var(--muted); font-size: 12px; }
+  .stat .v { font-size: 18px; font-weight: 700; margin-top: 2px; }
+  .stat .s { font-size: 13px; }
+  main { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 12px; padding: 0 16px 16px; height: calc(100vh - 170px); min-height: 520px; }
+  #map { border-radius: 10px; border: 1px solid var(--line); height: 100%; background: var(--panel); }
+  .side { display: flex; flex-direction: column; min-height: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .controls { display: flex; gap: 8px; padding: 10px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  .controls input, .controls select { font: inherit; padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--text); }
+  .controls input { flex: 1 1 160px; min-width: 0; }
+  .list { overflow: auto; flex: 1; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { position: sticky; top: 0; background: var(--panel); color: var(--muted); font-weight: 600; font-size: 12px; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover { background: var(--row-hover); }
+  tbody tr.sel { background: var(--accent-soft); }
+  .wx { white-space: normal; min-width: 110px; }
+  .detail { border-top: 1px solid var(--line); padding: 10px 12px; max-height: 45%; overflow: auto; display: none; }
+  .detail.show { display: block; }
+  .detail h2 { font-size: 16px; margin: 0 0 4px; display: flex; justify-content: space-between; gap: 8px; }
+  .detail h2 button { font: inherit; border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 18px; line-height: 1; }
+  .now { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+  .days { display: grid; grid-template-columns: repeat(7, minmax(78px, 1fr)); gap: 6px; overflow-x: auto; }
+  .day { border: 1px solid var(--line); border-radius: 8px; padding: 6px; text-align: center; font-size: 12px; }
+  .day .ic { font-size: 22px; }
+  .day .t { font-weight: 700; font-size: 13px; }
+  .day .r { color: var(--accent); }
+  .badge { display: inline-block; min-width: 44px; padding: 2px 6px; border-radius: 6px; color: #fff; font-weight: 700; text-align: center; }
+  footer { padding: 0 16px 16px; color: var(--muted); font-size: 12px; }
+  footer a { color: var(--accent); }
+  .msg { padding: 24px; color: var(--muted); }
+  .legend { background: var(--panel); color: var(--text); padding: 6px 8px; border-radius: 8px; font-size: 12px; line-height: 1.6; border: 1px solid var(--line); }
+  .legend i { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 4px; vertical-align: -1px; }
+  @media (max-width: 860px) {
+    main { grid-template-columns: 1fr; height: auto; }
+    #map { height: 55vh; min-height: 340px; }
+    .side { height: 75vh; }
+    .hide-sm { display: none; }
+  }
+  @media (max-width: 480px) {
+    .hide-xs { display: none; }
+    .legend { font-size: 11px; line-height: 1.4; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>สภาพอากาศ 77 จังหวัด</h1>
+  <div class="updated" id="updated">กำลังโหลดข้อมูล…</div>
+</header>
+<section class="summary" id="summary"></section>
+<main>
+  <div id="map"></div>
+  <div class="side">
+    <div class="controls">
+      <input id="q" type="search" placeholder="ค้นหาจังหวัด…" aria-label="ค้นหาจังหวัด">
+      <select id="region" aria-label="ภาค">
+        <option value="">ทุกภาค</option>
+        <option value="north">ภาคเหนือ</option>
+        <option value="northeast">ภาคตะวันออกเฉียงเหนือ</option>
+        <option value="central">ภาคกลาง</option>
+        <option value="east">ภาคตะวันออก</option>
+        <option value="south">ภาคใต้</option>
+      </select>
+      <select id="sort" aria-label="เรียงตาม">
+        <option value="name">เรียงตามชื่อ</option>
+        <option value="temp_desc">ร้อนสุด → เย็นสุด</option>
+        <option value="temp_asc">เย็นสุด → ร้อนสุด</option>
+        <option value="rain_desc">โอกาสฝนวันนี้มากสุด</option>
+      </select>
+    </div>
+    <div class="list" id="list"><div class="msg">กำลังโหลดข้อมูล…</div></div>
+    <div class="detail" id="detail"></div>
+  </div>
+</main>
+<footer>
+  ข้อมูลสภาพอากาศจาก <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo.com</a> (CC BY 4.0) ·
+  ค่าที่แสดงเป็นจุดตัวเมืองของแต่ละจังหวัด · อัปเดตอัตโนมัติทุกชั่วโมง ·
+  ดาวน์โหลด <a href="provinces_weather.json">JSON</a> / <a href="provinces_weather.geojson">GeoJSON</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const DATA_URLS = [
+  "provinces_weather.json",
+  "https://raw.githubusercontent.com/nawakonnakhonchai-wq/WeatherForecastDaily/main/provinces_weather.json"
+];
+const REGION_TH = { north: "ภาคเหนือ", northeast: "ภาคตะวันออกเฉียงเหนือ", central: "ภาคกลาง", east: "ภาคตะวันออก", south: "ภาคใต้" };
+const DOW = ["อา.", "จ.", "อ.", "พ.", "พฤ.", "ศ.", "ส."];
+const MON = ["ม.ค.", "ก.พ.", "มี.ค.", "เม.ย.", "พ.ค.", "มิ.ย.", "ก.ค.", "ส.ค.", "ก.ย.", "ต.ค.", "พ.ย.", "ธ.ค."];
+
+function icon(code) {
+  if (code == null) return "·";
+  if (code === 0) return "☀️";
+  if (code <= 2) return "🌤️";
+  if (code === 3) return "☁️";
+  if (code <= 48) return "🌫️";
+  if (code <= 57) return "🌦️";
+  if (code <= 67) return "🌧️";
+  if (code <= 77) return "🌨️";
+  if (code <= 82) return "🌦️";
+  if (code <= 86) return "🌨️";
+  return "⛈️";
+}
+// สีตามอุณหภูมิ (°C)
+const TEMP_STOPS = [[18, "#2c7bb6"], [22, "#4aa3c8"], [26, "#5bb37a"], [29, "#e0b400"], [32, "#f07d1a"], [35, "#d7301f"], [99, "#99000d"]];
+function tempColor(t) {
+  if (t == null) return "#8a96a3";
+  for (const [lim, c] of TEMP_STOPS) if (t < lim) return c;
+  return "#99000d";
+}
+const fmt = (v, d = 0) => v == null ? "–" : Number(v).toFixed(d);
+// อ่านวันที่จากสตริง (เวลาไทย) โดยตรง ไม่ขึ้นกับ timezone ของเครื่องผู้ชม
+function thaiDate(iso, withDow = true) {
+  const [y, m, d] = iso.slice(0, 10).split("-").map(Number);
+  const dow = new Date(Date.UTC(y, m - 1, d)).getUTCDay();
+  return (withDow ? DOW[dow] + " " : "") + d + " " + MON[m - 1];
+}
+function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+
+async function loadData() {
+  for (const url of DATA_URLS) {
+    try {
+      const res = await fetch(url + "?v=" + Math.floor(Date.now() / 600000), { cache: "no-cache" });
+      if (res.ok) return await res.json();
+    } catch (e) { /* ลอง URL ถัดไป */ }
+  }
+  throw new Error("โหลดข้อมูลไม่ได้");
+}
+
+const map = L.map("map", { zoomControl: true }).setView([13.2, 100.9], 6);
+L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+  maxZoom: 12, subdomains: "abcd",
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a> | Weather: <a href="https://open-meteo.com/">Open-Meteo</a>'
+}).addTo(map);
+const legend = L.control({ position: "bottomleft" });
+legend.onAdd = () => {
+  const div = L.DomUtil.create("div", "legend");
+  const labels = ["< 18", "18–22", "22–26", "26–29", "29–32", "32–35", "≥ 35"];
+  div.innerHTML = "<b>อุณหภูมิ (°C)</b><br>" + TEMP_STOPS.map(([, c], i) => `<i style="background:${c}"></i>${labels[i]}`).join("<br>");
+  return div;
+};
+legend.addTo(map);
+
+let DATA = null, selectedId = null;
+const markers = {};
+
+function render() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const region = document.getElementById("region").value;
+  const sort = document.getElementById("sort").value;
+  let rows = DATA.provinces.filter(p =>
+    (!region || p.region === region) &&
+    (!q || p.name_th.includes(q) || p.name_en.toLowerCase().includes(q)));
+  const today = p => (p.daily[0] || {});
+  const by = {
+    name: (a, b) => a.name_th.localeCompare(b.name_th, "th"),
+    temp_desc: (a, b) => (b.current.temp ?? -99) - (a.current.temp ?? -99),
+    temp_asc: (a, b) => (a.current.temp ?? 99) - (b.current.temp ?? 99),
+    rain_desc: (a, b) => (today(b).rain_prob ?? -1) - (today(a).rain_prob ?? -1),
+  }[sort];
+  rows.sort(by);
+
+  const visible = new Set(rows.map(p => p.id));
+  for (const [id, m] of Object.entries(markers)) {
+    if (visible.has(id)) { if (!map.hasLayer(m)) m.addTo(map); } else m.remove();
+  }
+
+  if (!rows.length) { document.getElementById("list").innerHTML = '<div class="msg">ไม่พบจังหวัดที่ค้นหา</div>'; return; }
+  document.getElementById("list").innerHTML = `
+    <table>
+      <thead><tr><th>จังหวัด</th><th>สภาพอากาศ</th><th class="num">อุณหภูมิ</th>
+        <th class="num hide-xs">สูง/ต่ำ วันนี้</th><th class="num">โอกาสฝน</th><th class="num hide-sm">ความชื้น</th></tr></thead>
+      <tbody>${rows.map(p => `
+        <tr data-id="${p.id}" class="${p.id === selectedId ? "sel" : ""}">
+          <td>${esc(p.name_th)}</td>
+          <td class="wx">${icon(p.current.weather_code)} ${esc(p.current.weather_th || "–")}</td>
+          <td class="num"><span class="badge" style="background:${tempColor(p.current.temp)}">${fmt(p.current.temp, 1)}°</span></td>
+          <td class="num hide-xs">${fmt(today(p).temp_max)}° / ${fmt(today(p).temp_min)}°</td>
+          <td class="num">${fmt(today(p).rain_prob)}%</td>
+          <td class="num hide-sm">${fmt(p.current.humidity)}%</td>
+        </tr>`).join("")}
+      </tbody>
+    </table>`;
+}
+
+function select(id, fly = true) {
+  selectedId = id;
+  const p = DATA.provinces.find(x => x.id === id);
+  if (!p) return;
+  document.querySelectorAll("tbody tr").forEach(tr => tr.classList.toggle("sel", tr.dataset.id === id));
+  const c = p.current;
+  const det = document.getElementById("detail");
+  det.innerHTML = `
+    <h2><span>${icon(c.weather_code)} ${esc(p.name_th)} <small style="color:var(--muted);font-weight:400">${esc(REGION_TH[p.region])}</small></span>
+      <button aria-label="ปิด" onclick="closeDetail()">×</button></h2>
+    <div class="now">ตอนนี้ ${fmt(c.temp, 1)}°C · ${esc(c.weather_th || "–")} · ความชื้น ${fmt(c.humidity)}% · ลม ${fmt(c.wind_kmh)} กม./ชม. · ฝน ${fmt(c.rain_mm, 1)} มม.</div>
+    <div class="days">${p.daily.map(d => `
+      <div class="day" title="${esc(d.weather_th)}">
+        <div>${thaiDate(d.date)}</div>
+        <div class="ic">${icon(d.weather_code)}</div>
+        <div class="t">${fmt(d.temp_max)}° / ${fmt(d.temp_min)}°</div>
+        <div class="r">☔ ${fmt(d.rain_prob)}%</div>
+        <div>${fmt(d.rain_mm, 1)} มม.</div>
+      </div>`).join("")}
+    </div>`;
+  det.classList.add("show");
+  if (fly) map.flyTo([p.lat, p.lon], Math.max(map.getZoom(), 8), { duration: 0.6 });
+  markers[id].openTooltip();
+}
+function closeDetail() {
+  selectedId = null;
+  document.getElementById("detail").classList.remove("show");
+  document.querySelectorAll("tbody tr.sel").forEach(tr => tr.classList.remove("sel"));
+}
+
+function renderSummary() {
+  const ps = DATA.provinces.filter(p => p.current.temp != null);
+  if (!ps.length) return;
+  const hot = ps.reduce((a, b) => b.current.temp > a.current.temp ? b : a);
+  const cool = ps.reduce((a, b) => b.current.temp < a.current.temp ? b : a);
+  const rainy = DATA.provinces.reduce((a, b) => ((b.daily[0] || {}).rain_prob ?? -1) > ((a.daily[0] || {}).rain_prob ?? -1) ? b : a);
+  const raining = DATA.provinces.filter(p => (p.current.rain_mm || 0) > 0 || (p.current.weather_code >= 51)).length;
+  const card = (k, v, s, id) => `<div class="stat" ${id ? `data-id="${id}"` : ""}><div class="k">${k}</div><div class="v">${v}</div><div class="s">${s}</div></div>`;
+  document.getElementById("summary").innerHTML =
+    card("ร้อนที่สุดตอนนี้", fmt(hot.current.temp, 1) + "°C", esc(hot.name_th), hot.id) +
+    card("เย็นที่สุดตอนนี้", fmt(cool.current.temp, 1) + "°C", esc(cool.name_th), cool.id) +
+    card("โอกาสฝนวันนี้สูงสุด", fmt((rainy.daily[0] || {}).rain_prob) + "%", esc(rainy.name_th), rainy.id) +
+    card("มีฝน/ฝนละอองขณะนี้", raining + " จังหวัด", "จากทั้งหมด " + DATA.provinces.length + " จังหวัด");
+}
+
+loadData().then(data => {
+  DATA = data;
+  const u = data.updated_at; // เช่น 2026-11-09T14:17:05+07:00
+  document.getElementById("updated").textContent =
+    "อัปเดตล่าสุด " + thaiDate(u, false) + " " + (Number(u.slice(0, 4)) + 543) + " เวลา " + u.slice(11, 16) + " น.";
+  for (const p of data.provinces) {
+    const m = L.circleMarker([p.lat, p.lon], {
+      radius: 8, weight: 1.5, color: "#ffffff", fillColor: tempColor(p.current.temp), fillOpacity: 0.95
+    }).addTo(map);
+    m.bindTooltip(`<b>${esc(p.name_th)}</b><br>${icon(p.current.weather_code)} ${fmt(p.current.temp, 1)}°C · ${esc(p.current.weather_th || "")}<br>โอกาสฝนวันนี้ ${fmt((p.daily[0] || {}).rain_prob)}%`);
+    m.on("click", () => select(p.id, false));
+    markers[p.id] = m;
+  }
+  map.fitBounds(L.latLngBounds(data.provinces.map(p => [p.lat, p.lon])), { padding: [16, 16] });
+  renderSummary();
+  render();
+}).catch(err => {
+  document.getElementById("updated").textContent = "";
+  document.getElementById("list").innerHTML =
+    '<div class="msg">ยังไม่มีข้อมูล — รัน workflow “Update Open-Meteo 77 Provinces” ในแท็บ Actions หนึ่งครั้ง แล้วลองเปิดหน้านี้ใหม่</div>';
+});
+
+document.getElementById("q").addEventListener("input", render);
+document.getElementById("region").addEventListener("change", render);
+document.getElementById("sort").addEventListener("change", render);
+document.getElementById("list").addEventListener("click", e => {
+  const tr = e.target.closest("tr[data-id]");
+  if (tr) select(tr.dataset.id);
+});
+document.getElementById("summary").addEventListener("click", e => {
+  const c = e.target.closest(".stat[data-id]");
+  if (c) select(c.dataset.id);
+});
+</script>
+</body>
+</html>
