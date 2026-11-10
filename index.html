@@ -44,14 +44,12 @@
   .hello .hi { color: var(--muted); font-size: 14px; }
   .hello h1 { margin: 2px 0 0; font-size: 22px; font-weight: 700; }
   .search { position: relative; flex: 0 1 340px; min-width: 200px; }
-  .search input { width: 100%; height: 44px; border-radius: 22px; border: 1px solid var(--line); background: var(--card); padding: 0 16px 0 42px; outline: none; }
-  .search input:focus { border-color: var(--accent); }
-  .search > svg { position: absolute; left: 15px; top: 13px; width: 18px; height: 18px; color: var(--muted); }
-  .sugg { position: absolute; z-index: 1000; top: 50px; left: 0; right: 0; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 6px; display: none; max-height: 320px; overflow: auto; box-shadow: 0 12px 30px rgba(0,0,0,.25); }
-  .sugg.show { display: block; }
-  .sugg button { display: flex; width: 100%; justify-content: space-between; gap: 8px; border: 0; background: none; padding: 9px 10px; border-radius: 10px; cursor: pointer; text-align: left; }
-  .sugg button:hover, .sugg button.hl { background: var(--tile); }
-  .sugg small { color: var(--muted); }
+  .search select { width: 100%; height: 44px; border-radius: 22px; border: 1px solid var(--line); background: var(--card); padding: 0 40px 0 42px; outline: none; cursor: pointer; appearance: none; -webkit-appearance: none; }
+  .search select:focus { border-color: var(--accent); }
+  .search select option, .search select optgroup { background: var(--card); color: var(--text); }
+  .search > svg { position: absolute; top: 13px; width: 18px; height: 18px; color: var(--muted); pointer-events: none; }
+  .search > svg.pin { left: 15px; }
+  .search > svg.caret { right: 15px; }
   .toggles { display: flex; gap: 10px; }
   .seg { display: flex; background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 3px; }
   .seg button { white-space: nowrap; border: 0; background: none; height: 36px; min-width: 38px; padding: 0 10px; border-radius: 18px; cursor: pointer; color: var(--muted); display: grid; place-items: center; font-weight: 600; }
@@ -213,9 +211,9 @@
         <h1>สภาพอากาศ 77 จังหวัด</h1>
       </div>
       <div class="search">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="q" type="search" placeholder="ค้นหาจังหวัด…" autocomplete="off" aria-label="ค้นหาจังหวัด">
-        <div class="sugg" id="sugg" role="listbox"></div>
+        <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <select id="pick" aria-label="เลือกจังหวัด"><option value="">กำลังโหลดจังหวัด…</option></select>
+        <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
       </div>
       <div class="toggles">
         <div class="seg" role="group" aria-label="หน่วยอุณหภูมิ">
@@ -536,6 +534,7 @@ function select(id, opts = {}) {
   const p = DATA.provinces.find(x => x.id === id);
   if (!p) return;
   SEL = p;
+  provPick.value = id;
   store.set("wx-province", id);
   if (opts.hash) history.replaceState(null, "", "#" + id);
   renderAll();
@@ -544,29 +543,15 @@ function select(id, opts = {}) {
 }
 function renderAll() { renderNow(); renderHighlights(); renderDays(); renderList(); renderTable(); renderMap(); }
 
-/* ---------- ค้นหา ---------- */
-const q = document.getElementById("q"), sugg = document.getElementById("sugg");
-let hlIdx = 0, matches = [];
-function showSugg() {
-  const s = q.value.trim().toLowerCase();
-  matches = s ? DATA.provinces.filter(p => p.name_th.includes(s) || p.name_en.toLowerCase().includes(s)).slice(0, 8) : [];
-  hlIdx = 0;
-  sugg.innerHTML = matches.length ? matches.map((p, i) => `<button data-id="${p.id}" class="${i === 0 ? "hl" : ""}"><span>${esc(p.name_th)} <small>${esc(p.name_en)}</small></span><small>${T(p.current.temp)}</small></button>`).join("")
-    : s ? '<div class="msg" style="padding:12px">ไม่พบจังหวัด</div>' : "";
-  sugg.classList.toggle("show", !!s);
+/* ---------- เลือกจังหวัด (dropdown) ---------- */
+const provPick = document.getElementById("pick");
+function buildPicker() {
+  provPick.innerHTML = Object.entries(REGION_TH).map(([rg, name]) => {
+    const ps = DATA.provinces.filter(p => p.region === rg).sort((a, b) => a.name_th.localeCompare(b.name_th, "th"));
+    return ps.length ? `<optgroup label="${esc(name)}">${ps.map(p => `<option value="${p.id}">${esc(p.name_th)}</option>`).join("")}</optgroup>` : "";
+  }).join("");
 }
-function pickSugg(id) { q.value = ""; sugg.classList.remove("show"); select(id, { fly: true, hash: true }); q.blur(); }
-q.addEventListener("input", showSugg);
-q.addEventListener("keydown", e => {
-  if (!matches.length) return;
-  if (e.key === "ArrowDown" || e.key === "ArrowUp") {
-    e.preventDefault(); hlIdx = (hlIdx + (e.key === "ArrowDown" ? 1 : -1) + matches.length) % matches.length;
-    [...sugg.children].forEach((b, i) => b.classList.toggle("hl", i === hlIdx));
-  } else if (e.key === "Enter") { e.preventDefault(); pickSugg(matches[hlIdx].id); }
-  else if (e.key === "Escape") sugg.classList.remove("show");
-});
-sugg.addEventListener("mousedown", e => { const b = e.target.closest("button[data-id]"); if (b) { e.preventDefault(); pickSugg(b.dataset.id); } });
-q.addEventListener("blur", () => setTimeout(() => sugg.classList.remove("show"), 120));
+provPick.addEventListener("change", () => { select(provPick.value, { fly: true, hash: true }); provPick.blur(); });
 
 /* ---------- ปุ่มต่าง ๆ ---------- */
 function syncSeg(attr, val) { document.querySelectorAll(`[${attr}]`).forEach(b => b.classList.toggle("on", b.getAttribute(attr) === val)); }
@@ -621,6 +606,7 @@ loadData().then(data => {
       .on("click", () => select(p.id))
       .addTo(map);
   }
+  buildPicker();
   map.fitBounds(L.latLngBounds(data.provinces.map(p => [p.lat, p.lon])), { padding: [20, 20] });
   const fromHash = location.hash.slice(1).toUpperCase();
   const start = [fromHash, store.get("wx-province"), "BKK"].find(id => id && data.provinces.some(p => p.id === id));
