@@ -7,6 +7,7 @@
 
 รันเอง:  python scripts/update_openmeteo.py
 """
+import http.client
 import json
 import sys
 import time
@@ -71,7 +72,13 @@ def describe(code):
     return WMO.get(int(code), ("ไม่ทราบ", "Unknown"))
 
 
-def fetch(provinces, retries=4):
+# Open-Meteo ตอบช้าเป็นช่วง ๆ (เช่น 13 พ.ย. handshake หมดเวลา 4 ครั้งติดใน 3 นาที)
+# จึงลองใหม่ 6 ครั้ง รอ 10, 20, 40, 80, 120 วินาที ครอบคลุมช่วงช้าได้ราว 5 นาที
+REQUEST_TIMEOUT = 30
+MAX_DELAY = 120
+
+
+def fetch(provinces, retries=6):
     params = {
         "latitude": ",".join(f"{p['lat']:.4f}" for p in provinces),
         "longitude": ",".join(f"{p['lon']:.4f}" for p in provinces),
@@ -82,14 +89,15 @@ def fetch(provinces, retries=4):
     }
     url = API_URL + "?" + urllib.parse.urlencode(params, safe=",")
     req = urllib.request.Request(url, headers={"User-Agent": "WeatherForecastDaily/1.0 (GitHub Actions)"})
-    delay = 5
+    delay = 10
     for attempt in range(1, retries + 1):
         try:
-            with urllib.request.urlopen(req, timeout=60) as resp:
+            with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
                 data = json.load(resp)
             # เมื่อส่งหลายพิกัด API จะตอบเป็น list เรียงตามลำดับพิกัด
             return data if isinstance(data, list) else [data]
-        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
+        # OSError ครอบ URLError, TimeoutError และการเชื่อมต่อหลุดกลางทาง; HTTPException ครอบการอ่านข้อมูลไม่ครบ
+        except (OSError, http.client.HTTPException, json.JSONDecodeError) as e:
             body = ""
             if isinstance(e, urllib.error.HTTPError):
                 body = e.read().decode("utf-8", "replace")[:300]
@@ -98,8 +106,9 @@ def fetch(provinces, retries=4):
             print(f"ครั้งที่ {attempt} ล้มเหลว: {e} {body}", file=sys.stderr)
             if attempt == retries:
                 raise
+            print(f"รอ {delay} วินาทีแล้วลองใหม่", file=sys.stderr)
             time.sleep(delay)
-            delay *= 2
+            delay = min(delay * 2, MAX_DELAY)
 
 
 def build(provinces, results, fetched_at):
