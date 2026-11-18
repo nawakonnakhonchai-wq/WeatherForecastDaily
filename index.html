@@ -176,6 +176,21 @@
     .hide-sm { display: none; }
     .tbl-ctrl input { width: 130px; }
   }
+
+/* sliding highlight (slide-hl.js) */
+.hl-on { isolation: isolate; }
+.shl { position: absolute; left: 0; top: 0; width: 0; height: 0; z-index: 0; pointer-events: none; opacity: 0;
+  transition: transform .32s cubic-bezier(.3, 1.25, .5, 1), width .32s cubic-bezier(.3, 1.25, .5, 1), height .32s cubic-bezier(.3, 1.25, .5, 1), opacity .2s; }
+.shl-line { height: 2px; border-radius: 2px !important; }
+@media (prefers-reduced-motion: reduce) { .shl { transition: none; } }
+@media print { .shl { display: none; } }
+  .seg.hl-on { position: relative; }
+  .nav .shl { background: var(--tile); }
+  .seg .shl { background: var(--tile-hover); }
+  .nav.hl-on > a, .nav.hl-on > .logo, .seg.hl-on > button { position: relative; z-index: 1; transition: color .2s; }
+  .nav.hl-on a, .nav.hl-on a:hover, .nav.hl-on a.on, .seg.hl-on button, .seg.hl-on button.on { background: transparent; }
+  .nav.hl-on a:hover, .seg.hl-on button:hover { color: var(--text); }
+  .nav.hl-on a.on svg { color: var(--accent); }
 </style>
 </head>
 <body>
@@ -616,5 +631,6 @@ loadData().then(data => {
   document.getElementById("nowcard").innerHTML = '<div class="msg">ยังไม่มีข้อมูล — รัน workflow “Update Open-Meteo 77 Provinces” ในแท็บ Actions แล้วเปิดหน้านี้ใหม่</div>';
 });
 </script>
+<script src="slide-hl.js"></script>
 </body>
 </html>
