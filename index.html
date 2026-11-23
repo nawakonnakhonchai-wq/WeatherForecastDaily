@@ -204,6 +204,34 @@
     #scroll-prog { display: none !important; }
     .reveal-el, .reveal-el .dcard, .reveal-el svg.chart, .reveal-el .chart svg { opacity: 1 !important; transform: none !important; transition: none !important; }
   }
+  /* ===== Unified WaterDash-Style Collapsible Left Sidebar ===== */
+  @media (min-width: 761px) {
+    .app { max-width: none !important; padding: 0 !important; gap: 0 !important; grid-template-columns: 252px minmax(0, 1fr) !important; transition: grid-template-columns .25s cubic-bezier(.22, 1, .36, 1); }
+    .app.collapsed { grid-template-columns: 76px minmax(0, 1fr) !important; }
+    .app > main { padding: 20px 24px 32px; max-width: 1440px; width: 100%; margin: 0 auto; }
+    .nav { top: 0 !important; height: 100vh !important; border-radius: 0 !important; align-items: stretch !important; padding: 20px 14px 20px 0 !important; gap: 2px !important; border-right: 1px solid var(--line); box-shadow: none !important; overflow-y: auto; overflow-x: hidden; }
+    .nav .side-brand { display: flex; align-items: center; gap: 12px; padding: 0 8px 20px 20px; }
+    .nav .hamb { all: unset; cursor: pointer; width: 34px; height: 34px; flex: none; display: grid; place-items: center; border-radius: 8px; color: var(--text); }
+    .nav .hamb:hover { background: var(--tile); }
+    .nav .brand-w { display: inline-flex; align-items: center; gap: 9px; white-space: nowrap; }
+    .nav .logo { width: 28px !important; height: 28px !important; margin: 0 !important; flex: none; }
+    .nav .logo-t { font-size: 20px; font-weight: 700; letter-spacing: -.015em; color: var(--text); }
+    .nav .logo-t b { color: var(--accent); font-weight: 700; }
+    .nav .nav-h { margin: 18px 0 6px 24px; font-size: 11.5px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--text); opacity: .65; white-space: nowrap; }
+    .nav a { width: auto !important; height: auto !important; display: flex !important; align-items: center; justify-content: flex-start !important; gap: 13px; padding: 11px 14px 11px 24px !important; border-radius: 0 999px 999px 0 !important; font-size: 14.5px; font-weight: 500; white-space: nowrap; }
+    .nav a.on::before { display: none !important; }
+    .nav .shl { border-radius: 0 999px 999px 0 !important; background: var(--app) !important; }
+    .nav a.on, .nav.hl-on a.on { background: var(--app) !important; color: var(--accent) !important; font-weight: 700 !important; box-shadow: 0 1px 4px rgba(0, 0, 0, .08); }
+    .nav a .lbl-t { flex: 1; overflow: hidden; text-overflow: ellipsis; }
+    .app.collapsed .nav { padding: 20px 12px !important; gap: 6px !important; }
+    .app.collapsed .nav .side-brand { flex-direction: column; padding: 0 0 16px; gap: 10px; }
+    .app.collapsed .nav .logo-t, .app.collapsed .nav .nav-h, .app.collapsed .nav .lbl-t { display: none !important; }
+    .app.collapsed .nav a { justify-content: center !important; padding: 11px !important; border-radius: 12px !important; }
+    .app.collapsed .nav .shl { border-radius: 12px !important; }
+  }
+  @media (max-width: 760px) {
+    .nav .side-brand, .nav .nav-h, .nav .lbl-t { display: none !important; }
+  }
 </style>
 </head>
 <body>
@@ -223,14 +251,21 @@
 
 <div class="app">
   <nav class="nav" aria-label="เมนู">
-    <svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><use href="#ic-logo"/></svg>
-    <a href="https://nawakonnakhonchai-wq.github.io/index.html" class="nav-home" title="กลับหน้าหลัก Main Dashboard" aria-label="กลับหน้าหลัก Main Dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10.5 9-7.5 9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg></a>
-    <a href="#overview" class="on" title="ภาพรวม" aria-label="ภาพรวม"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></a>
-    <a href="#forecast" title="พยากรณ์ 10 วัน" aria-label="พยากรณ์ 10 วัน"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></a>
-    <a href="#mapcard" title="แผนที่" aria-label="แผนที่"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg></a>
-    <a href="#tablecard" title="ตาราง 77 จังหวัด" aria-label="ตาราง 77 จังหวัด"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></a>
+    <div class="side-brand">
+      <button type="button" class="hamb" id="btn-menu" aria-label="ย่อหรือขยายเมนู" title="ย่อ/ขยายเมนู"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <span class="brand-w"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><use href="#ic-logo"/></svg><span class="logo-t">Weather<b>Dash</b></span></span>
+    </div>
+    <a href="https://nawakonnakhonchai-wq.github.io/index.html" class="nav-home" title="กลับหน้าหลัก Main Dashboard" aria-label="กลับหน้าหลัก Main Dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10.5 9-7.5 9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg><span class="lbl-t">กลับหน้าหลัก</span></a>
+    <div class="nav-h">แดชบอร์ด</div>
+    <a href="#overview" class="on" title="ภาพรวม" aria-label="ภาพรวม"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><span class="lbl-t">ภาพรวม</span></a>
+    <div class="nav-h">พยากรณ์ & แผนที่</div>
+    <a href="#forecast" title="พยากรณ์ 10 วัน" aria-label="พยากรณ์ 10 วัน"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span class="lbl-t">พยากรณ์ 10 วัน</span></a>
+    <a href="#mapcard" title="แผนที่อากาศ" aria-label="แผนที่อากาศ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg><span class="lbl-t">แผนที่อากาศ</span></a>
+    <div class="nav-h">ข้อมูล</div>
+    <a href="#tablecard" title="ตาราง 77 จังหวัด" aria-label="ตาราง 77 จังหวัด"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 10h16M10 10v9"/></svg><span class="lbl-t">ตาราง 77 จังหวัด</span></a>
     <div class="spacer"></div>
-    <a href="#about" title="เกี่ยวกับข้อมูล" aria-label="เกี่ยวกับข้อมูล"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></a>
+    <div class="nav-h">ช่วยเหลือ</div>
+    <a href="#about" title="เกี่ยวกับข้อมูล" aria-label="เกี่ยวกับข้อมูล"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span class="lbl-t">เกี่ยวกับข้อมูล</span></a>
   </nav>
 
   <main>
@@ -683,6 +718,16 @@ loadData().then(data => {
     new MutationObserver(function(){ setupReveal(); }).observe(nowcard, { childList: true });
   }
   setTimeout(setupReveal, 1000);
+  var btnMenu = document.getElementById('btn-menu');
+  var appEl = document.querySelector('.app');
+  if (btnMenu && appEl) {
+    try { if (localStorage.getItem('wx-side') === 'collapsed') appEl.classList.add('collapsed'); } catch (e) {}
+    btnMenu.addEventListener('click', function(){
+      appEl.classList.toggle('collapsed');
+      try { localStorage.setItem('wx-side', appEl.classList.contains('collapsed') ? 'collapsed' : 'open'); } catch (e) {}
+      setTimeout(function(){ window.dispatchEvent(new Event('resize')); }, 270);
+    });
+  }
 })();
 </script>
 </body>
